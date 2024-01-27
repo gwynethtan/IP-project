@@ -169,6 +169,12 @@ body {
     padding-bottom: 15px;
 }
 
+/* only want 'home' to be yellow */
+.navtext a.home {
+    color:#D5B255;
+    text-decoration: none;
+}
+
 /* remove decorated link and colours */
 .navtext a {
     color:#f5f5f5;
@@ -216,3 +222,14 @@ body {
     display: block;
     margin:0;
 }
+
+/* Feed */
+
+/* For posts One & Two to be side by side */
+#postColumnOne {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
