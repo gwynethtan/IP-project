@@ -1,7 +1,7 @@
 /* (LOG IN PAGE) styles.css.....................................................*/
 
 body {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
 
 /* Homepage Navigation Bar */
@@ -38,7 +38,7 @@ body {
 
 /* hover over effect */
 .navtext a:hover {
-    color: rgb(186, 14, 114);
+    color: #D5B255;
   }
 
 /* logo */
@@ -77,7 +77,7 @@ body {
     margin:0;
 }
 
-/* Welcome Introduction */
+/* Homepage Welcome Introduction */
 
 #middle {
     display: flex;
@@ -87,17 +87,11 @@ body {
 
 
 .navbackground img {
-    width: 98%;
+    width:100%;
     height: 700px;
 }
 
-
-.navform {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-basis: 7%;
-}
+/* Log In Form */
 
 .loginForm h1 {
     font-size: 30px;
@@ -105,10 +99,41 @@ body {
     padding-left: 30px;
 }
 
-.loginForm label{
-    color: #6b2a3a;
+form {
+    padding: 30px;
+    width: 390px;
+    margin: auto; 
 }
 
-.loginForm input{
-    border-radius: 5px;
+/* label is the text for 'username', 'password' */
+label {
+    display: block;
 }
+
+/* boxes for input */
+input {
+    padding-left: 12px;
+    margin-bottom: 15 px;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 30px;
+    outline: none;
+}
+
+/* Login button */
+input[type="submit"] {
+    background-color: #D5B255;
+    color: #f9f9f9; /* Color tect for login */
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2A456B;
+}
+
+
+/* (Home PAGE) styles.css.....................................................*/
