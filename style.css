@@ -60,15 +60,15 @@ body {
     justify-content: space-between;
     flex-direction: row;
     flex-basis: 10%;
-    padding-top: 15px;
-    padding-bottom: 10px;
+}
+
+.navicons a {
+    margin-right: 35px;
 }
 
 .navicons img {
     max-width: 20px;
     height: auto;
-    display: block;
-    margin: 0;
 }
 
 /* Welcome Introduction */
