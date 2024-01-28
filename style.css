@@ -72,7 +72,6 @@ body {
 }
 
 /* Welcome Introduction */
-
 #middle {
     display: flex;
     flex-direction: row;
@@ -85,7 +84,6 @@ body {
 }
 
 /* Log In Form */
-
 .loginForm h1 {
     font-size: 30px;
     padding-top: 200px;
@@ -324,4 +322,5 @@ body {
     }
 }
 
-/* Post Column Two */
+/* (COMMENT PAGE) styles.css.....................................................*/
+
