@@ -232,4 +232,51 @@ body {
     width: 100%;
 }
 
+/* Post One */
+.postOne {
+    width: 100%;
+    padding-left: 20px;
+}
+
+/* Sketchfab content takes up full width of its container */
+.postImage .sketchfab-embed-wrapper iframe {
+    width: 98%;
+    height: 400px;
+}
+
+.postProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.postProfile img {
+    width: 50px; /* Adjust the width as needed */
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.postProfile h1 {
+    font-size: 20px;
+}
+
+.postComment {
+    font-family: "Arial", sans-serif;
+}
+
+.postComment h1 {
+    font-size: 12px; 
+    color: #333;
+}
+
+/* Post Two */
+.postTwo {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.postImage img {
+    width: 500px;
+}
 
