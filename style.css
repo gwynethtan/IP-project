@@ -256,7 +256,7 @@ input[type="submit"]:hover {
 /* Posted Image */
 .commentPicture {
     flex-direction: row;
-    width: 1400px;
+    width: 900px;
     padding-right: 80px;
 }
 
@@ -292,18 +292,23 @@ input[type="submit"]:hover {
     color: #272727;
 }
 
-/* Comment Section */
+/* Comment Section One*/
 
 /* Flexbox for Comment Section */
-.comments {
+.commentSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
     display: flex;
     flex-direction: row;
-    width: 900px;
+    width: 500px;
     padding-top: 60px;
 }
 
 /* Profile Picture */
-.commentsImage img{
+.commentImage img{
     width: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -311,14 +316,14 @@ input[type="submit"]:hover {
 }
 
 /* Font for title */
-.commentsDetails h1 {
+.commentDetails h1 {
     font-size: 18px;
     color: #272727;
     font-weight:bolder;
     margin: 0;
 }
 
-.commentsDetails textarea {
+.commentDetails textarea {
     width: 100%;
     height: 60px;
     padding: 5px;
@@ -329,10 +334,56 @@ input[type="submit"]:hover {
     resize: none;
 }
 
-.commentsDetails textarea:focus {
+.commentDetails textarea:focus {
     border-color: #2A456B;
 }
 
+/* Comment Section Two*/
+.commentHeading {
+    font-size: 11px;
+    color: #272727;
+    font-weight:bolder;
+    margin: 0;
+}
 
+/* Comment Area Section Two*/
+.commentArea {
+    display: flex;
+    flex-direction: column;
+}
 
+/* Profile Details */
+.areaProfile {
+    display: flex;
+    flex-direction: row;
+}
 
+.areaProfileName h1 {
+    font-size: 12px;
+    color: #272727;
+    font-weight:bolder;
+    margin: 0;  
+    padding-top: 10px;
+}
+
+.areaProfilePic img {
+    width: 40px;
+    padding-right: 10px;
+}
+
+/* Comments by Area Section Two */
+.areaDetails {
+    width: 90%;
+    margin: none;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.areaDetails h1 {
+    font-size: 11px;
+    color: #272727;
+    font-weight:bolder;
+    margin: 0;  
+    font-weight: 300;
+
+}
