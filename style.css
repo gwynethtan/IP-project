@@ -447,6 +447,7 @@ ol {
 
 .uploadHeading {
     padding-top: 120px;
+    padding-bottom: 20px;
     text-align: center
 }
 
@@ -514,16 +515,16 @@ ol {
 
 /* Selector: Uploads Sizing */
 .uploadTitle {
-    width: 1250px; 
+    width: 1285px; 
 }
 
 .uploadLink {
-    width: 1250px; 
+    width: 1285px; 
     padding-top: 30px;
 }
 
 .uploadCaption {
-    width: 1250px; 
+    width: 1285px; 
     padding-top: 30px;
 }
 
