@@ -387,7 +387,7 @@ input[type="submit"]:hover {
 .areaProfileIcons img {
     width: 16px;
     height: 16px;
-    padding-left: 30px
+    padding-left: 60px
 }
 
 .areaProfileIcons h3 {
@@ -395,7 +395,7 @@ input[type="submit"]:hover {
     color: #D5B255;
     font-weight:bolder;
     margin: 0;
-    padding-left: 30px;
+    padding-left: 8px;
 }
 
 /* Comment Texts */
@@ -418,3 +418,19 @@ ol {
     padding-left: 12px;
     margin: 0;
 }
+
+/* Responsive Styles */
+@media screen and (min-width: 400px) {
+    #commentPage {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+
+    .commentSection {
+        max-width: 100%;
+        margin: auto;
+    }
+} 
