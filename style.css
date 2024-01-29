@@ -244,6 +244,7 @@ input[type="submit"]:hover {
 
 /* (COMMENT PAGE) styles.css.....................................................*/
 
+/* Comment Section One*/
 /* For CommentPicture & Comments to be side by side */
 #commentPage {
     display: flex;
@@ -256,14 +257,14 @@ input[type="submit"]:hover {
 /* Posted Image */
 .commentPicture {
     flex-direction: row;
-    width: 900px;
+    width: 1450px;
     padding-right: 80px;
 }
 
 /* Sketchfab content takes up full width of its container */
 .commentPictureImage .sketchfab-embed-wrapper iframe {
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 
 /* Profile Image */
@@ -292,9 +293,9 @@ input[type="submit"]:hover {
     color: #272727;
 }
 
-/* Comment Section One*/
+/* Comment Section Two*/
 
-/* Flexbox for Comment Section */
+/* Flexbox for Comment Section Two */
 .commentSection {
     display: flex;
     flex-direction: column;
@@ -307,7 +308,7 @@ input[type="submit"]:hover {
     padding-top: 60px;
 }
 
-/* Profile Picture */
+/* Comment Section Two: Profile Picture */
 .commentImage img{
     width: 50px;
     padding-top: 10px;
@@ -315,7 +316,7 @@ input[type="submit"]:hover {
     padding-right: 20px;
 }
 
-/* Font for title */
+/* Comment Section Two: Font for Username */
 .commentDetails h1 {
     font-size: 18px;
     color: #272727;
@@ -323,6 +324,7 @@ input[type="submit"]:hover {
     margin: 0;
 }
 
+/* Comment Section Two: Input Comment Box */
 .commentDetails textarea {
     width: 100%;
     height: 60px;
@@ -338,40 +340,65 @@ input[type="submit"]:hover {
     border-color: #2A456B;
 }
 
-/* Comment Section Two*/
+/* Comment Section Two: "Comment" */
 .commentHeading {
     font-size: 11px;
     color: #272727;
     font-weight:bolder;
-    margin: 0;
+    margin: none;
 }
 
-/* Comment Area Section Two*/
+/* Comment Area Section Two (Comm from other users)*/
 .commentArea {
     display: flex;
     flex-direction: column;
+    padding-bottom: 25px;
 }
 
-/* Profile Details */
+/* Comment Profile Details */
 .areaProfile {
     display: flex;
     flex-direction: row;
 }
 
-.areaProfileName h1 {
-    font-size: 12px;
+.areaProfileName h1 { /* "Janet Cindy" */
+    font-size: 14px;
     color: #272727;
     font-weight:bolder;
     margin: 0;  
     padding-top: 10px;
+    padding-right: 220px;
 }
 
-.areaProfilePic img {
+.areaProfilePic img { /* Profile Pic */
     width: 40px;
     padding-right: 10px;
 }
 
-/* Comments by Area Section Two */
+/* Comment Section Two Icons */
+.areaProfileIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.areaProfileIcons img {
+    width: 16px;
+    height: 16px;
+    padding-left: 30px
+}
+
+.areaProfileIcons h3 {
+    font-size: 14px;
+    color: #D5B255;
+    font-weight:bolder;
+    margin: 0;
+    padding-left: 30px;
+}
+
+/* Comment Texts */
 .areaDetails {
     width: 90%;
     margin: none;
@@ -380,10 +407,14 @@ input[type="submit"]:hover {
 }
 
 .areaDetails h1 {
-    font-size: 11px;
+    font-size: 13px;
     color: #272727;
     font-weight:bolder;
     margin: 0;  
     font-weight: 300;
+}
 
+ol {
+    padding-left: 12px;
+    margin: 0;
 }
