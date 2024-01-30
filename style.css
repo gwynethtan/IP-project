@@ -645,6 +645,7 @@ ol {
     padding-top: 30px;
 }
 
+/* Form */
 form {
     margin: 0;
     display: flex;
@@ -658,4 +659,53 @@ input[type="submit"] {
     border: none;
     width: 128px; 
     font-weight: 100;
+}
+
+/* (UPLOAD POSTED PAGE) styles.css.....................................................*/
+/* joinedMain */
+.postedBG{
+    background-color: #2A456B;
+}
+
+.joinedMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.joinedMain h1 {
+    padding-top: 150px;
+    color: #f5f5f5;
+}
+
+/* joinedBody */
+.joinedBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.joinedBody h3 {
+    padding-top: 5px;
+    color: #f5f5f5;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+/* joinedButton */
+.joinedBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f5f5f5;
+    color: #2A456B; /* Color text for login */
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    width: 40px;
+    font-weight: 600;
+}
+
+.joinedBtn:hover {
+    background-color: #D5B255;
 }
