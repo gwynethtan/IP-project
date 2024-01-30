@@ -716,20 +716,17 @@ input[type="submit"] {
     padding-top: 150px;
 }
 
-/* (CHALLENGE PAGE) styles.css.....................................................*/
+/* (REWARD PAGE) styles.css.....................................................*/
 /* Points */
 .point {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 60px;
-    position: fixed;
     width: 100%;
-    border-bottom: 2px solid #D5B255;
-
 }
 
-.points h1 {
+.point h1 {
     color: #D5B255;
 }
 
@@ -739,6 +736,8 @@ input[type="submit"] {
     width: 100%;
     color: #D5B255;
     background-color: #ffffff;
+    position: fixed;
+    border-bottom: 2px solid #D5B255;
 }
 
 /* Challege Feed */
