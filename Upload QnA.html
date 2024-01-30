@@ -29,39 +29,41 @@
         </div>
     </div>
 
-    <div id="uploadPage">
-        <div class="uploadHeading">
+    <div id="uploadPageQnA">
+        <div class="headingQnA">
             <h2>Posted to</h2>
         </div>
 
-        <div class="selector">
-            <div class="uploadQnA">
+        <div class="selectorQnA">
+            <div class="selectorQnA_QnA">
                 <a href="upload QnA.html">QnA</a>
             </div>
 
-            <div class="uploadAchiever">
+            <div class="selectorQnA_Achi">
                 <a href="upload achiever.html">Achiever</a>
             </div>
         </div>
 
-        <div class="uploadTitle">
+        <div class="titleQnA">
             <label for="title">Title:</label><br>
             <input type="text" id="title" name="title"><br>
         </div>
 
-        <div class="uploadLink">
+        <div class="linkQnA">
             <label for="link">Sketchfab Link:</label><br>
             <input type="text" id="link" name="link"><br>
         </div>
         
-        <div class="uploadCaption">
+        <div class="captionQnA">
             <label for="caption">Caption:</label><br>
             <input type="text" id="caption" name="caption"><br>
         </div>
 
-        <form action="posted.html">
-            <input type="submit" value="POST">
-        </form>
+        <div class="uploadPostBtn">
+            <form action="posted.html" style="display: flex; justify-content: center; width: auto;">
+                <input class='postBtn' type="submit" value="POST">
+            </form>
+        </div>
 
     </div>
 

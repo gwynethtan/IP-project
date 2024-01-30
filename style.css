@@ -79,9 +79,14 @@ body {
     width: 100%;
 }
 
+.navbackground {
+    width:70%;
+    height: 700px;
+}
+
 .navbackground img {
     width:100%;
-    height: 700px;
+    height: 773px;
 }
 
 /* Log In Form */
@@ -92,7 +97,7 @@ body {
 }
 
 form {
-    padding: 30px;
+    padding: 30px;  
     width: 390px;
     margin: auto; 
 }
@@ -112,18 +117,20 @@ input {
     background-color: #f5f5f5;
     height: 30px;
     outline: none;
+    font-weight: 650;
 }
 
 /* Login button */
-input[type="submit"] {
+.loginBtn {
     background-color: #D5B255;
     color: #f9f9f9; /* Color text for login */
     cursor: pointer;
     border: none;
     border-radius: 15px;
+    width: 40px;
 }
 
-input[type="submit"]:hover {
+.loginBtn:hover {
     background-color: #2A456B;
 }
 
@@ -218,7 +225,7 @@ input[type="submit"]:hover {
 }
 
 /* Responsive for max-width: 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     /* Column One in Feed */
     #ColumnOne {
         flex-direction: column;
@@ -420,10 +427,10 @@ ol {
 }
 
 /* Responsive Styles */
-@media screen and (min-width: 400px) {
+@media only screen and (max-width: 850px) {
     #commentPage {
-        display: flex;
-        flex-direction: row;
+        display: none;
+        flex-direction: column;
         width: 100%;
         padding-top: 60px;
         padding-left: 20px;
@@ -437,7 +444,7 @@ ol {
 
 /* (UPLOAD QNA PAGE) styles.css.....................................................*/
 /* Heading "Posted to" */
-#uploadPage {
+#uploadPageQnA {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -445,55 +452,51 @@ ol {
     height: 100vh; /* Make the container take up the full viewport height */
 }
 
-.uploadHeading {
-    padding-top: 120px;
+.headingQnA {
+    padding-top: 10px;
     padding-bottom: 20px;
     text-align: center
 }
 
-.uploadHeading h2 {
+.headingQnA h2 {
     font-size: 18px;
 }
 
 /* Selector */
-.selector {
+.selectorQnA {
     display: flex;
     flex-direction: row;
     margin-bottom: 2%;
 }
 
 /* Selector: QnA */
-.uploadQnA {
+.selectorQnA_QnA {
     display: flex;
     justify-content: space-between;
     flex-basis: 10%;
-    border-radius: 15px;
+    border-radius: 8px;
     color: #f9f9f9;
-    background-color: #2A456B;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    background-color: #D5B255;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 300px;
     padding-right: 300px;
     margin-right: 2%;
 }
 
-.uploadQnA a {
+.selectorQnA_QnA a {
     font-size: 14px;
     color: #f5f5f5;
     text-decoration: none;
     margin: 0;
-}
-
-.uploadQnA :hover {
-    background-color: #D5B255;
-    color: #f9f9f9;
+    font-weight: 600;
 }
 
 /* Selector: Achiever */
-.uploadAchiever {
+.selectorQnA_Achi {
     display: flex;
     justify-content: space-between;
-    border-radius: 15px;
+    border-radius: 8px;
     color: #f9f9f9;
     background-color: #2A456B;
     padding-top: 4px;
@@ -502,48 +505,157 @@ ol {
     padding-right: 300px;
 }
 
-.uploadAchiever a {
+.selectorQnA_Achi a {
     font-size: 14px;
+    font-weight: 600;
     color: #f5f5f5;
     text-decoration: none;
     margin: 0;
 }
 
-.uploadAchiever a:hover {
-    color: #f9f9f9;
-}
-
 /* Selector: Uploads Sizing */
-.uploadTitle {
+.titleQnA {
     width: 1285px; 
 }
 
-.uploadLink {
+.linkQnA {
     width: 1285px; 
     padding-top: 30px;
 }
 
-.uploadCaption {
+.captionQnA {
     width: 1285px; 
     padding-top: 30px;
 }
 
 /* Selector: POSTED Form */
-.uploadForm input[type="submit"] {
-    background-color: #D5B255;
-    color: #f9f9f9;
+.uploadPostBtn {
     cursor: pointer;
     border: none;
-    border-radius: 15px;
-    padding: 10px;
+    border-radius: 8px;
+    padding: 8px;
 }
 
-.uploadForm input[type="submit"]:hover {
+.uploadPostBtn input { /* Text */
+    color: #f5f5f5;
+    font-weight: 600;
     background-color: #2A456B;
+    margin: none;
+    border-radius: 20px;
 }
 
-/* (UPLOAD Achiever PAGE) styles.css.....................................................*/
+.uploadPostBtn input:hover {
+    background-color: #D5B255;
+}
 
-/* (POSTED PAGE) styles.css.....................................................*/
+/* (UPLOAD ACHI PAGE) styles.css.....................................................*/
+/* Heading "Posted to" */
+#uploadPageAchi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make the container take up the full viewport height */
+    width: 80%;
+}
 
-/* (JOINED PAGE) styles.css.....................................................*/
+.headingAchi {
+    padding-top: 200px;
+    padding-bottom: 20px;
+    text-align: center
+}
+
+.headingAchi h2 {
+    font-size: 18px;
+}
+
+/* Selector */
+.selectorAchi {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2%;
+}
+
+/* Selector: QnA */
+.selectorAchi_QnA {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 10%;
+    border-radius: 8px;
+    color: #f9f9f9;
+    background-color: #2A456B;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-right: 2%;
+}
+
+.selectorAchi_QnA a {
+    font-size: 14px;
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Selector: Achiever */
+.selectorAchi_Achi {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    color: #f9f9f9;
+    background-color: #D5B255;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.selectorAchi_Achi a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Selector: Uploads Sizing */
+.titleAchi {
+    width: 1285px; 
+}
+
+.linkAchi {
+    width: 1285px; 
+    padding-top: 30px;
+}
+
+.playersAchi {
+    width: 1285px; 
+    padding-top: 30px;
+}
+
+.neededAchi {
+    width: 1285px; 
+    padding-top: 30px;
+}
+
+.deadlineAchi {
+    width: auto; 
+    padding-top: 30px;
+}
+
+form {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 1285px; 
+}
+
+input[type="submit"] {
+    padding-right:8px;
+    padding-left: 8px;
+    border: none;
+    width: 128px; 
+    font-weight: 100;
+}
