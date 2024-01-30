@@ -716,4 +716,71 @@ input[type="submit"] {
     padding-top: 150px;
 }
 
-/* (UPLOAD POSTED PAGE) styles.css.....................................................*/
+/* (CHALLENGE PAGE) styles.css.....................................................*/
+/* Points */
+.point {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 60px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid #D5B255;
+
+}
+
+.points h1 {
+    color: #D5B255;
+}
+
+.pointSection {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #D5B255;
+    background-color: #ffffff;
+}
+
+/* Challege Feed */
+.challengeFeed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Column 1 */
+.challengeCol {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 160px;
+    width: 110%;
+}
+
+.challengeCol h1 {
+    font-size: 20px;
+    color: #2A456B;
+}
+
+.challengeCol img {
+    width: 100%;
+}
+
+/* Claim Button */
+.colBtn {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.colBtn .colBtn1 {
+    width: 100%;
+    background-color: #D5B255;
+    color: #f5f5f5;
+}
+
+.colBtn1:hover {
+    background-color: grey;
+    color: #f5f5f5;
+}
