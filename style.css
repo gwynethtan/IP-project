@@ -662,7 +662,6 @@ input[type="submit"] {
 }
 
 /* (UPLOAD POSTED PAGE) styles.css.....................................................*/
-/* joinedMain */
 .postedBG{
     background-color: #2A456B;
 }
@@ -674,7 +673,6 @@ input[type="submit"] {
 }
 
 .joinedMain h1 {
-    padding-top: 150px;
     color: #f5f5f5;
 }
 
@@ -697,15 +695,25 @@ input[type="submit"] {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #f5f5f5;
-    color: #2A456B; /* Color text for login */
-    cursor: pointer;
-    border: none;
-    border-radius: 15px;
-    width: 40px;
-    font-weight: 600;
+    padding-top: 30px;
 }
 
-.joinedBtn:hover {
-    background-color: #D5B255;
+.joinedBtn1 {
+    width: 20%;
+    background-color: #f5f5f5;
 }
+
+.joinedBtn1:hover {
+    background-color: #D5B255;
+    color: #f5f5f5;
+}
+
+/* Lottie */
+.joinedLottie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+/* (UPLOAD POSTED PAGE) styles.css.....................................................*/
