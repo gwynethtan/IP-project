@@ -52,6 +52,13 @@ body {
     display: flex;
     flex-basis: 80%;
     justify-content: center;
+    padding-right: 230px;
+    padding-top: 10px;
+}
+
+.logo img {
+    max-width: 40px;
+    height: auto;
 }
 
 /* icons */
@@ -1240,7 +1247,7 @@ input[type="submit"] {
     font-size: 15px;
     font-weight: 300;
     margin: 5px;
-    padding-left: 40px;
+    padding-left: 10px;
 }
 
 /* Section1 */
@@ -1264,7 +1271,7 @@ input[type="submit"] {
     font-size: 15px;
     font-weight: 300;
     margin: 5px;
-    padding-left: 40px;
+    padding-left: 10px;
 }
 
 /* Form */
@@ -1278,7 +1285,21 @@ input[type="submit"] {
 .contactQuestion h1 {
     font-size: 15px;
     color: #2A456B;
-    font-weight: 700;
+    font-weight: 600;
+}
+
+.contactEmail img {
+    width: 15px;
+    height: 15px;
+    padding-top: 7px;
+    padding-left: 9px;
+}
+
+.contactPhone img {
+    width: 15px;
+    height: 15px;
+    padding-top: 7px;
+    padding-left: 9px;
 }
 
 /* Form Name */
