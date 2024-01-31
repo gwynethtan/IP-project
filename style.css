@@ -282,8 +282,8 @@ input {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding-top: 60px;
-    padding-left: 20px;
+    padding-top: 70px;
+    padding-left: 60px;
 }
 
 /* Posted Image */
@@ -291,12 +291,6 @@ input {
     flex-direction: row;
     width: 1450px;
     padding-right: 80px;
-}
-
-/* Sketchfab content takes up full width of its container */
-.commentPictureImage .sketchfab-embed-wrapper iframe {
-    width: 100%;
-    height: 550px;
 }
 
 /* Profile Image */
@@ -307,22 +301,30 @@ input {
 }
 
 .commentPictureProfile img {
-    width: 50px;
+    width: 45px;
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
 } 
 
-/* Font for title */
-.commentPictureProfile h1 {
-    font-size: 22px;
-    color: #272727;
+/* Sketchfab content takes up full width of its container */
+.commentPictureImage .sketchfab-embed-wrapper iframe {
+    width: 100%;
+    height: 550px;
 }
 
 /* Font for comment */
 .commentPictureComment h1 {
     font-size: 15px;
     color: #272727;
+    font-weight: 400;
+}
+
+/* Font for title */
+.commentPictureProfile h1 {
+    font-size: 22px;
+    color: #272727;
+    font-weight: 600;
 }
 
 /* Comment Section Two*/
@@ -331,6 +333,7 @@ input {
 .commentSection {
     display: flex;
     flex-direction: column;
+    padding-right: 60px;
 }
 
 .comment {
@@ -352,13 +355,13 @@ input {
 .commentDetails h1 {
     font-size: 18px;
     color: #272727;
-    font-weight:bolder;
+    font-weight: 600;
     margin: 0;
 }
 
 /* Comment Section Two: Input Comment Box */
 .commentDetails textarea {
-    width: 100%;
+    width: 450px;
     height: 60px;
     padding: 5px;
     margin-top: 10px;
@@ -373,11 +376,12 @@ input {
 }
 
 /* Comment Section Two: "Comment" */
-.commentHeading {
-    font-size: 11px;
+.commentHeading h1 {
+    font-size: 20px;
     color: #272727;
-    font-weight:bolder;
+    font-weight: 600;
     margin: none;
+    padding-bottom: 10px;
 }
 
 /* Comment Area Section Two (Comm from other users)*/
@@ -393,18 +397,18 @@ input {
     flex-direction: row;
 }
 
-.areaProfileName h1 { /* "Janet Cindy" */
-    font-size: 14px;
-    color: #272727;
-    font-weight:bolder;
-    margin: 0;  
-    padding-top: 10px;
-    padding-right: 220px;
-}
-
 .areaProfilePic img { /* Profile Pic */
     width: 40px;
     padding-right: 10px;
+}
+
+.areaProfileName h1 { /* "Janet Cindy" */
+    font-size: 14px;
+    color: #272727;
+    font-weight: 600;
+    margin: 0;  
+    padding-top: 10px;
+    padding-right: 220px;
 }
 
 /* Comment Section Two Icons */
@@ -425,7 +429,7 @@ input {
 .areaProfileIcons h3 {
     font-size: 14px;
     color: #D5B255;
-    font-weight:bolder;
+    font-weight: 600;
     margin: 0;
     padding-left: 8px;
 }
