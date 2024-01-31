@@ -241,6 +241,7 @@ input {
 .postProfile h1 {
     font-size: 20px;
     font-weight: 600;
+    color: #2A456B;
 }
 
 .postComment h1 {
@@ -323,7 +324,7 @@ input {
 /* Font for title */
 .commentPictureProfile h1 {
     font-size: 22px;
-    color: #272727;
+    color: #2A456B;
     font-weight: 600;
 }
 
@@ -707,7 +708,7 @@ input[type="submit"] {
     font-weight: 100;
 }
 
-/* (UPLOAD POSTED PAGE) styles.css.....................................................*/
+/* ( POSTED LOTTIE PAGE) styles.css.....................................................*/
 .postedBG{
     background-color: #2A456B;
 }
@@ -787,10 +788,24 @@ input[type="submit"] {
 }
 
 /* Challege Feed */
+
 .challengeFeed {
+    display: flex;
+    flex-direction: column;
+}
+
+.challengePadding {
+    padding-top: 100px;
+}
+
+.challenge {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 2px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
 }
 
 /* Column 1 */
@@ -799,8 +814,7 @@ input[type="submit"] {
     flex-direction: column;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 160px;
-    width: 110%;
+    width: 100%;
 }
 
 .challengeCol h1 {
@@ -821,11 +835,23 @@ input[type="submit"] {
 
 .colBtn .colBtn1 {
     width: 100%;
-    background-color: #D5B255;
+    background-color: #2A456B;
     color: #f5f5f5;
 }
 
 .colBtn1:hover {
+    background-color: grey;
+    color: #f5f5f5;
+}
+
+.colBtn2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.colBtn2 .colBtn1_2 {
+    width: 100%;
     background-color: grey;
     color: #f5f5f5;
 }
