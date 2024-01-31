@@ -893,3 +893,175 @@ input[type="submit"] {
 }
 
 /* (CONTACT PAGE) styles.css.....................................................*/
+.contactHeading {
+    display: flex;
+    flex-direction: row;
+    padding-top: 150px;
+    justify-content: center;
+}
+
+.contactHeading h1 {
+    font-size: 30px;
+    color: #2A456B;
+}
+
+
+/* Section1 */
+.contactSection1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.emailPadding {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.contactEmail {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #2A456B; /* Adjust the thickness and color as needed */
+    color: #2A456B;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.contactEmail h3 {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 5px;
+    padding-left: 40px;
+}
+
+/* Section1 */
+.contactPhone {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactPhone {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #2A456B; /* Adjust the thickness and color as needed */
+    color: #2A456B;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.contactPhone h3 {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 5px;
+    padding-left: 40px;
+}
+
+/* Section2 */
+.contactQuestion {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    justify-content: center;
+}
+
+.contactQuestion h1 {
+    font-size: 15px;
+    color: #2A456B;
+    font-weight: 700;
+}
+
+/* Form Name */
+.questionName {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #2A456B;
+    width: 50%; 
+    margin: auto; 
+    border-radius: 5px; 
+}
+
+.questionName input {
+    border: none;
+    outline: none;
+    padding: 1px;
+    font-size: 14px; 
+    background-color: transparent;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+/* Form Email */
+.questionEmail {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #2A456B;
+    width: 50%; 
+    margin: auto; 
+    border-radius: 5px; 
+}
+
+.questionEmail input {
+    border: none;
+    outline: none;
+    padding: 1px;
+    font-size: 14px; 
+    background-color: transparent;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.emailPadding {
+    display: flex;
+    padding-top: 15px;
+}
+
+/* Form Description */
+.questionDescrip {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #2A456B;
+    width: 50%; 
+    margin: auto; 
+    border-radius: 5px; 
+}
+
+.questionDescrip input {
+    border: none;
+    outline: none;
+    padding: 1px;
+    font-size: 14px; 
+    background-color: transparent;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+/* Button */
+.contactPostBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactPostBtn form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactPostBtn input {
+    color: #f5f5f5;
+    font-weight: 600;
+    background-color: #2A456B;
+    border: none;
+    border-radius: 20px;
+}
+
+.contactPostBtn input:hover {
+    background-color: #D5B255;
+}
+
+
