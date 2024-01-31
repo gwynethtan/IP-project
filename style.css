@@ -1379,6 +1379,9 @@ input[type="submit"] {
     background-color: #D5B255;
 }
 
+
+/* Responsive Styles */
+
 @media (min-width: 576px) and (max-width: 767px) {
     .contactHeading {
         padding-top: 100px;
@@ -1393,7 +1396,6 @@ input[type="submit"] {
     }
 }
 
-/* Mobile Styles */
 @media (max-width: 575px) {
     .contactHeading {
         padding-top: 80px;
