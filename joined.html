@@ -6,9 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </head>
 
-<body>
+<body class="postedBG">
 
     <!--Standard Navigation Bar-->
 
@@ -29,28 +30,25 @@
         </div>
     </div>
 
-    <!--Homepage Welcome Introduction-->
-
-    <div id="middle">
-        <div class="navbackground">
-            <img src="Pictures/LogIn - Wallpaper.png">
+    <div class="joined">
+        <div class="joinedLottie">
+            <dotlottie-player src="https://lottie.host/ed9a1b94-105b-486c-ac51-2bc6b139671a/PTIbuSeGAZ.json" background="transparent" speed="2" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
         </div>
 
-    <!--Start of LogIn Form-->
-
-        <div class="loginForm" style="width: 20%;">
-            <div>
-                <h1>Welcome!</h1>
-            </div>
-        
-            <form action="index.html" style="width: 100%;">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username"><br>
-                <label for="pwd">Password:</label><br>
-                <input type="password" id="pwd" name="pwd"><br><br>
-                <input class='loginBtn' type="submit" value="LOG IN">
-            </form>
+        <div class="joinedMain">
+            <h1>JOINED!</h1>
         </div>
+
+        <div class="joinedBody">
+            <h3>You have successfully joined the group. An email has been sent to your Microsoft Teams. Say hi!</h3>
+        </div>
+
+        <div class="joinedBtn">
+            <a href="index.html">
+                <input class='joinedBtn1' type="submit" value="Done">
+            </a>
+        </div>
+
     </div>
 
 </body>
