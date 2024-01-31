@@ -154,7 +154,7 @@ input {
 /* Responsive for max-width: 768px */
 @media screen and (max-width: 768px) {
     #top {
-        height: 20px;
+        height: 40px;
     }
 
     .navtext a {
@@ -184,18 +184,24 @@ input {
 /* (HOME PAGE) styles.css.....................................................*/
 /* Feed */
 
+.columnOnePadding {
+    display: flex;
+    padding-top: 60px;
+}
+
 /* For posts One & Two to be side by side */
-#ColumnOne {
+.columnOne {
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding-top: 60px;
+    padding-bottom: 5px;
 }
 
 /* Post Column One */
 .postColumnOne {
     width: 100%;
-    padding-left: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 /* Sketchfab content takes up full width of its container */
@@ -244,14 +250,14 @@ input {
 /* Responsive for max-width: 768px */
 @media screen and (max-width: 900px) {
     /* Column One in Feed */
-    #ColumnOne {
+    .columnOne {
         flex-direction: column;
     }
 
     .postColumnOne {
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .postProfile img {
