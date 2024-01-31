@@ -1087,7 +1087,7 @@ input[type="submit"] {
 }
 
 .leftFeedImage img {
-    width: 750px;
+    width: 100%;
     margin-right: 20px;
     padding-bottom: 10px;
 }
@@ -1166,6 +1166,39 @@ input[type="submit"] {
     background-color: #D5B255;
 }
 
+@media screen and (max-width: 900px) {
+    .challengeColumnOne {
+        flex-direction: column;
+    }
+
+    .rightFeed {
+        padding-top: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .rightFeedDetails h2 {
+        font-size: 11px;
+    }
+
+    .rightFeedDetails h1 {
+        font-size: 16px;
+    }
+
+    .challengePadding {
+        padding-top: 35px;
+    }
+
+    .leftFeedImage {
+        width: auto;
+    }
+
+    .leftFeedProfile h2 {
+        font-size: 16px;
+    }
+    
+}
+
 /* (CONTACT PAGE) styles.css.....................................................*/
 .contactHeading {
     display: flex;
@@ -1195,7 +1228,7 @@ input[type="submit"] {
 .contactEmail {
     display: flex;
     flex-direction: row;
-    border: 1px solid #2A456B; /* Adjust the thickness and color as needed */
+    border: 1px solid #2A456B;
     color: #2A456B;
     width: 50%;
     height: 30px;
@@ -1219,7 +1252,7 @@ input[type="submit"] {
 .contactPhone {
     display: flex;
     flex-direction: row;
-    border: 1px solid #2A456B; /* Adjust the thickness and color as needed */
+    border: 1px solid #2A456B;
     color: #2A456B;
     width: 50%;
     height: 30px;
@@ -1234,7 +1267,7 @@ input[type="submit"] {
     padding-left: 40px;
 }
 
-/* Section2 */
+/* Form */
 .contactQuestion {
     display: flex;
     flex-direction: row;
@@ -1266,6 +1299,8 @@ input[type="submit"] {
     background-color: transparent;
     font-weight: 300;
     padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Form Email */
@@ -1286,6 +1321,8 @@ input[type="submit"] {
     background-color: transparent;
     font-weight: 300;
     padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .emailPadding {
@@ -1311,6 +1348,8 @@ input[type="submit"] {
     background-color: transparent;
     font-weight: 300;
     padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Button */
@@ -1318,6 +1357,7 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 .contactPostBtn form {
@@ -1332,6 +1372,7 @@ input[type="submit"] {
     background-color: #2A456B;
     border: none;
     border-radius: 20px;
+    padding: 5px;
 }
 
 .contactPostBtn input:hover {
