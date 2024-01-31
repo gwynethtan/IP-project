@@ -636,8 +636,23 @@ ol {
     padding: 5px;
 }
 
+.uploadPostBtn input[type="submit"] {
+    font-weight: 600; /* Adjust the font weight as needed */
+}
+
 .uploadPostBtn input:hover {
     background-color: #D5B255;
+}
+
+@media screen and (max-width: 768px) {
+    .selectorQnA {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .selectorQnA_QnA,
+    .selectorQnA_Achi {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
 
 /* (UPLOAD ACHI PAGE) styles.css.....................................................*/
@@ -832,6 +847,22 @@ input[type="submit"] {
     font-weight: 100;
 }
 
+@media screen and (max-width: 768px) {
+    .selectorAchi {
+        flex-direction: column;
+    }
+
+    .selectorAchi_QnA,
+    .selectorAchi_Achi {
+        width: 100%;
+    }
+
+    .dateAchi,
+    .levelAchi {
+        width: 100%;
+    }
+}
+
 /* (POSTED LOTTIE PAGE) styles.css.....................................................*/
 .postedBG{
     background-color: #2A456B;
@@ -966,8 +997,10 @@ input[type="submit"] {
 
 .colBtn .colBtn1 {
     width: 100%;
+    padding: 5px;
     background-color: #2A456B;
     color: #f5f5f5;
+    border-radius: 12px;
 }
 
 .colBtn1:hover {
@@ -983,8 +1016,38 @@ input[type="submit"] {
 
 .colBtn2 .colBtn1_2 {
     width: 100%;
+    padding: 5px;
     background-color: grey;
+    border-radius: 12px;
     color: #f5f5f5;
+}
+
+@media screen and (max-width: 900px) {
+    .point {
+        padding-top: 30px;
+    }
+
+    .point h1 {
+        font-size: 20px;
+    }
+
+    /* Column One in Feed */
+    .challenge {
+        flex-direction: column;
+    }
+
+    .challengePadding {
+        padding-top: 50px;
+    }
+
+    .challengeCol h1 {
+        font-size: 12px;
+    }
+
+    .colBtn, .colBtn2 {
+        font-size: 8px;
+        padding: 8px 8px;
+    }
 }
 
 /* (CHALLENGE PAGE) styles.css.....................................................*/
