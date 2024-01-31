@@ -478,71 +478,64 @@ ol {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Make the container take up the full viewport height */
+    padding-top: 120px;
 }
 
 .headingQnA {
-    padding-top: 10px;
+    display: flex;
     padding-bottom: 20px;
-    text-align: center
 }
 
 .headingQnA h2 {
     font-size: 18px;
+    font-weight: 500;
 }
 
-/* Selector */
+/* Common styles for both selectors */
 .selectorQnA {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Selector: QnA */
 .selectorQnA_QnA {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     color: #f9f9f9;
     background-color: #D5B255;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding: 5px 15px; 
     margin-right: 2%;
+    margin-bottom: 2%;
+    width: 610px;
 }
 
-.selectorQnA_QnA a {
-    font-size: 14px;
-    color: #f5f5f5;
-    text-decoration: none;
-    margin: 0;
-    font-weight: 600;
-}
-
-/* Selector: Achiever */
 .selectorQnA_Achi {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     color: #f9f9f9;
     background-color: #2A456B;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding: 5px 15px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 610px;
 }
 
+.selectorQnA_QnA a,
 .selectorQnA_Achi a {
     font-size: 14px;
-    font-weight: 600;
     color: #f5f5f5;
     text-decoration: none;
     margin: 0;
+    font-weight: 600;
 }
 
-/* Selector: Uploads Sizing */
+/* Selector */
 .titleQnA {
     width: 1285px; 
 }
@@ -559,7 +552,6 @@ ol {
 
 /* Selector: POSTED Form */
 .uploadPostBtn {
-    cursor: pointer;
     border: none;
     border-radius: 8px;
     padding: 8px;
@@ -578,78 +570,78 @@ ol {
 }
 
 /* (UPLOAD ACHI PAGE) styles.css.....................................................*/
-/* Heading "Posted to" */
 #uploadPageAchi {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Make the container take up the full viewport height */
-    width: 80%;
+    padding-top: 120px;
 }
 
+/* Players 2 button */
+.players {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+/* Heading "Posted to" */
 .headingAchi {
-    padding-top: 200px;
+    display: flex;
     padding-bottom: 20px;
-    text-align: center
 }
 
 .headingAchi h2 {
     font-size: 18px;
+    font-weight: 500;
 }
 
-/* Selector */
+/* Common styles for both selectors */
 .selectorAchi {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Selector: QnA */
 .selectorAchi_QnA {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
-    flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     color: #f9f9f9;
     background-color: #2A456B;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding: 5px 15px; 
     margin-right: 2%;
+    margin-bottom: 2%;
+    width: 610px;
 }
 
-.selectorAchi_QnA a {
-    font-size: 14px;
-    color: #f5f5f5;
-    text-decoration: none;
-    margin: 0;
-    font-weight: 600;
-}
-
-/* Selector: Achiever */
 .selectorAchi_Achi {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
     color: #f9f9f9;
     background-color: #D5B255;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding: 5px 15px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 610px;
 }
 
+.selectorAchi_QnA a,
 .selectorAchi_Achi a {
     font-size: 14px;
-    font-weight: 600;
     color: #f5f5f5;
     text-decoration: none;
     margin: 0;
+    font-weight: 600;
 }
 
-/* Selector: Uploads Sizing */
+/* Selector */
 .titleAchi {
     width: 1285px; 
 }
@@ -659,22 +651,47 @@ ol {
     padding-top: 30px;
 }
 
+.captionAchi {
+    width: 580px; 
+    padding-top: 30px;
+}
+
 .playersAchi {
-    width: 1285px; 
+    width: 580px; 
     padding-top: 30px;
 }
 
-.neededAchi {
-    width: 1285px; 
-    padding-top: 30px;
+.dateAchi {
+    width: 580px; 
 }
 
-.deadlineAchi {
-    width: auto; 
-    padding-top: 30px;
+.levelAchi {
+    width: 580px; 
 }
 
-/* Form */
+/* Date Level Container */
+.dateLevel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    padding-top: 40px;
+}
+
+/* Date Dropdown */
+#level {
+    padding: 8px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 14px;
+    flex: 1;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+/* POST BUTTON */
 form {
     margin: 0;
     display: flex;
