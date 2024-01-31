@@ -1379,4 +1379,33 @@ input[type="submit"] {
     background-color: #D5B255;
 }
 
+@media (min-width: 576px) and (max-width: 767px) {
+    .contactHeading {
+        padding-top: 100px;
+    }
+
+    .contactEmail,
+    .contactPhone,
+    .questionName,
+    .questionEmail,
+    .questionDescrip {
+        width: 70%;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 575px) {
+    .contactHeading {
+        padding-top: 80px;
+    }
+
+    .contactEmail,
+    .contactPhone,
+    .questionName,
+    .questionEmail,
+    .questionDescrip {
+        width: 100%;
+    }
+}
+
 
