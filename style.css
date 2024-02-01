@@ -1115,6 +1115,7 @@ input[type="submit"] {
 /* Adjust Texts */
 .leftFeedProfile h2 {
     font-size: 18px;
+    color:#2A456B;
 }
 
 .rightFeed {

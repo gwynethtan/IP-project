@@ -36,7 +36,7 @@
 
         <div class="selectorQnA">
             <div class="selectorQnA_QnA">
-                <a href="upload QnA.html">QnA</a>
+                <a href="Upload QnA.html">QnA</a>
             </div>
 
             <div class="selectorQnA_Achi">
@@ -60,11 +60,33 @@
         </div>
 
         <div class="uploadPostBtn">
-            <form action="posted.html" style="display: flex; justify-content: center; width: auto;">
+            <form  onsubmit="submitForm(event)" style="display: flex; justify-content: center; width: auto;">
                 <input class='postBtn' type="submit" value="POST">
             </form>
         </div>
 
     </div>
+    <script>
+        function submitForm(qnaUpload) {
+            qnaUpload.preventDefault();
+
+            // Get the content from the input field
+            const title = document.getElementById('title').value;
+            const link = document.getElementById('link').value;
+            const caption = document.getElementById('caption').value;
+
+            // Save content to localStorage
+            localStorage.setItem('title', title);
+            localStorage.setItem('link', link);
+            localStorage.setItem('caption', caption);
+
+            // Redirect to the receiver page
+            window.location.href = "index.html"; 
+
+            console.log('title',title);
+            console.log('title',title);
+            console.log('caption',caption)
+        }
+    </script>
 
 </body>
