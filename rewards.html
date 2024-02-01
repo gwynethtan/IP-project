@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
 
     <div class="point">
         <div class="pointSection">
-            <h1>500</h1>
+            <h1 id="userPoints">500</h1>
         </div>
     </div>
 
@@ -49,24 +49,24 @@
                     <img src="Pictures/5 Challenge.png">
                     
                     <div class="colBtn">
-                        <input class='colBtn1' type="submit" value="CLAIM" style="font-weight: 700;">
+                        <input data-points="300" class='colBtn1' type="submit" value="CLAIM" style="font-weight: 700;" onclick="deductPoints(this,'grab')">
                     </div>
                 </div>
     
                 <!--Price Two-->
                 <div class="rewardsCol">
-                    <h1>$10 NTUC Voucher - 500pts</h1>
-                    <img src="Pictures/1 Challenge.png">
+                    <h1>$10 Grab Voucher - 500pts</h1>
+                    <img src="Pictures/5 Challenge.png">
                     
                     <div class="colBtn">
-                        <input class='colBtn1' type="submit" value="CLAIM" style="font-weight: 700;">
+                        <input data-points="500" class='colBtn1' type="submit" value="CLAIM" style="font-weight: 700;" onclick="deductPoints(this,'ntuc')">
                     </div>
                 </div>
     
                 <!--Price Three-->
                 <div class="rewardsCol">
-                    <h1>$10 Nike Voucher</h1>
-                    <img src="Pictures/3 Challenge.png">
+                    <h1>$5 Nike Voucher - 1000pts</h1>
+                    <img src="Pictures/3.png">
                     
                     <div class="colBtn2">
                         <input class='colBtn1_2' type="submit" value="CLAIM" style="font-weight: 700;">
@@ -146,5 +146,6 @@
         </div>
 
     </div>
-
+<script defer src="js/points.js"></script>
 </body>
+</html> 
