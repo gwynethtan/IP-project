@@ -50,7 +50,7 @@
             </div>
 
             <div class="linkQnA">
-                <label for="link">Embeded code of model</label><br>
+                <label for="link">Embedded code of model</label><br>
                 <input type="text" id="link" name="link"><br>
             </div>
             
@@ -72,12 +72,12 @@
 
                 // Get the content from the input field
                 const title = document.getElementById('title').value;
-                const embededCode = document.getElementById('link').value;
+                const embeddedCode = document.getElementById('link').value;
                 const caption = document.getElementById('caption').value;
 
                 // Save content to localStorage
                 localStorage.setItem('title', title);
-                localStorage.setItem('embededCode',embededCode);
+                localStorage.setItem('embeddedCode',embeddedCode);
                 localStorage.setItem('caption', caption);
 
                 // Redirect to the receiver page
