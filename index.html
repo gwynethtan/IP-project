@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html> 
 <head>
   <link rel="stylesheet" href="normalise.css" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,22 +48,9 @@
 
         <div class="postImage">
           <div class="sketchfab-embed-wrapper">
-            <iframe
-              title="IG manager_turntable"
-              frameborder="0"
-              allowfullscreen
-              mozallowfullscreen="true"
-              webkitallowfullscreen="true"
-              allow="autoplay; fullscreen; xr-spatial-tracking"
-              xr-spatial-tracking
-              execution-while-out-of-viewport
-              execution-while-not-rendered
-              web-share
-              src="https://sketchfab.com/models/9c3298aac6334509ae3e4366a1ae7107/embed"
-            ></iframe>
+            <iframe width="800px" height="900px" src="your_embed_url" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
           </div>
         </div>
-
         <div class="postIcons">
           <img src="Pictures/Home - Heart Icon.png" />
           <a href="comment.html">
@@ -74,46 +61,6 @@
         <div class="postComment">
           <h1>
             Can someone teach me how to extrude edges? Can I merge vertex too??
-          </h1>
-        </div>
-      </div>
-
-      <!--Post Two-->
-      <div class="postColumnOne">
-        <div class="postProfile">
-          <img src="Pictures/Home - Profile Pic.png" />
-          <h1>Any Improvements I can make?</h1>
-        </div>
-
-        <div class="postImage">
-          <div class="sketchfab-embed-wrapper">
-            <iframe
-              title="22_tanTingYuGwyneth_ASG2_robot"
-              frameborder="0"
-              allowfullscreen
-              mozallowfullscreen="true"
-              webkitallowfullscreen="true"
-              allow="autoplay; fullscreen; xr-spatial-tracking"
-              xr-spatial-tracking
-              execution-while-out-of-viewport
-              execution-while-not-rendered
-              web-share
-              src="https://sketchfab.com/models/7612044b0a3f42668b93a57981e72434/embed"
-            ></iframe>
-          </div>
-        </div>
-
-        <div class="postIcons">
-          <img src="Pictures/Home - Heart Icon.png" />
-          <a href="comment.html">
-            <img src="Pictures/Home - Comment Icon.png" />
-          </a>
-        </div>
-
-        <div class="postComment">
-          <h1>
-            Comment any kind of suggestions to improve my model! Appreciate good
-            and bad! Thanks!
           </h1>
         </div>
       </div>
@@ -161,45 +108,6 @@
         </h1>
       </div>
     </div>
-
-    <!--Post Two-->
-    <div class="postColumnOne">
-      <div class="postProfile">
-        <img src="Pictures/Home - Profile Pic.png" />
-        <h1>Any Improvements I can make?</h1>
-      </div>
-
-      <div class="postImage">
-        <div class="sketchfab-embed-wrapper">
-          <iframe
-            title="22_tanTingYuGwyneth_ASG2_robot"
-            frameborder="0"
-            allowfullscreen
-            mozallowfullscreen="true"
-            webkitallowfullscreen="true"
-            allow="autoplay; fullscreen; xr-spatial-tracking"
-            xr-spatial-tracking
-            execution-while-out-of-viewport
-            execution-while-not-rendered
-            web-share
-            src="https://sketchfab.com/models/7612044b0a3f42668b93a57981e72434/embed"
-          ></iframe>
-        </div>
-      </div>
-
-      <div class="postIcons">
-        <img src="Pictures/Home - Heart Icon.png" />
-        <a href="comment.html">
-          <img src="Pictures/Home - Comment Icon.png" />
-        </a>
-      </div>
-
-      <div class="postComment">
-        <h1>
-          Comment any kind of suggestions to improve my model! Appreciate good
-          and bad! Thanks!
-        </h1>
-      </div>
     </div>
   </div>
 
@@ -245,17 +153,29 @@
       </div>
     </div>
 
-    <!--Post Two-->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  var username = localStorage.getItem("title");
+  var postText = localStorage.getItem("caption");
+  var modelLink = localStorage.getItem("link");
+
+
+  // Check if required data is available
+  if (username && postText && modelLink) {
+    document.body.innerHTML += `
+    <div class="columnOne">
+    <!--Post One-->
     <div class="postColumnOne">
       <div class="postProfile">
         <img src="Pictures/Home - Profile Pic.png" />
-        <h1>Any Improvements I can make?</h1>
+        <h1>I can't extrude..</h1>
       </div>
 
       <div class="postImage">
         <div class="sketchfab-embed-wrapper">
           <iframe
-            title="22_tanTingYuGwyneth_ASG2_robot"
+            title="IG manager_turntable"
             frameborder="0"
             allowfullscreen
             mozallowfullscreen="true"
@@ -265,7 +185,7 @@
             execution-while-out-of-viewport
             execution-while-not-rendered
             web-share
-            src="https://sketchfab.com/models/7612044b0a3f42668b93a57981e72434/embed"
+            src="https://sketchfab.com/models/9c3298aac6334509ae3e4366a1ae7107/embed"
           ></iframe>
         </div>
       </div>
@@ -279,49 +199,15 @@
 
       <div class="postComment">
         <h1>
-          Comment any kind of suggestions to improve my model! Appreciate good
-          and bad! Thanks!
+          Can someone teach me how to extrude edges? Can I merge vertex too??
         </h1>
       </div>
     </div>
-  </div>
-  <script>
-    // Get the content from localStorage
-    const titleInput = localStorage.getItem("title");
-    const linkInput = localStorage.getItem("link");
-    const captionInput = localStorage.getItem("caption");
-
-    // Display the content on the page
-    document.body.innerHTML += `
-            <div class="columnOne">
-                <div class="postColumnOne">
-
-                    <div class="postProfile">
-                        <img src="Pictures/Home - Profile Pic.png">
-                        <h1>${titleInput}</h1>
-                    </div>
-                        
-                    <div class="postImage">
-                        <div class="sketchfab-embed-wrapper">
-                            <div id="sketchfabContainer"> </div> 
-                        </div>
-                    </div>
-
-                    <div class="postIcons">
-                        <img src="Pictures/Home - Heart Icon.png">
-                        <a href="comment.html">
-                            <img src="Pictures/Home - Comment Icon.png">
-                        </a>
-                    </div>
-
-                    <div class="postComment">
-                        ${captionInput}
-                    </div>
-
-                </div>
-            `;
-
-    // Set the innerHTML of 'sketchfabContainer' after the structure is added
-    document.getElementById("sketchfabContainer").innerHTML = linkInput;
+    </div>
+    `;
+  }
+});
   </script>
+  <script defer src="js/script.js"></script>
 </body>
+</html>

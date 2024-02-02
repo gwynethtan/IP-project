@@ -222,7 +222,7 @@ label {
 }
 
 /* (HOME PAGE) styles.css.....................................................*/
-/* Feed */
+/* qna page */
 
 .columnOnePadding {
     display: flex;
@@ -248,6 +248,7 @@ label {
 .postImage .sketchfab-embed-wrapper iframe {
     width: 98%;
     height: 400px;
+    border-radius: 5px;
 }
 
 /* Profile Image */
