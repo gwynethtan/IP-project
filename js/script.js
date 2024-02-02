@@ -1,10 +1,61 @@
 const apiBaseUrl = "https://api.sketchfab.com/v3/models/";
-const apiKey = "4351796cf6b8414498e5db4f437be245"; // Replace with your actual Sketchfab API key
+const apiKey = "4351796cf6b8414498e5db4f437be245"; 
 
 const modelIds = [
   "cacfc7474a604ed4b0275b8a3293eff6", "266316c0b16e4bf8abf7f8274e33deec", "d80bb55a259642d897e31bc038e1c396"
-  // Add more model IDs as needed
 ];
+
+
+//get variables from the uploadQNA
+document.addEventListener("DOMContentLoaded", function submitForm() {
+  const modelQn = localStorage.getItem("title");
+  const caption = localStorage.getItem("caption");
+  const embededCode = localStorage.getItem("embededCode"); 
+
+  //code test 
+  console.log(`Model Name: ${modelQn}`);
+  console.log(`Description: ${caption}`);
+  console.log(`Code: ${embededCode}`);
+
+  document.body.innerHTML += `
+      <div class="columnOne">
+      <!--Post One-->
+      <div class="postColumnOne">
+        <div class="postProfile">
+          <div class="profilePicPadding">
+          <img src="https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg">
+          </div> 
+          <h1>${modelQn}</h1>
+        </div>
+  
+        <div class="postImage">
+          <div class="sketchfab-embed-wrapper">
+          <div id="uploadNew"> </div>
+          </div>
+        </div>
+  
+        <div class="postIcons">
+          <img src="Pictures/Home - Heart Icon.png" />
+          <a href="comment.html">
+            <img src="Pictures/Home - Comment Icon.png" />
+          </a>
+        </div>
+  
+        <div class="postComment">
+          <h1>
+          ${caption}
+          </h1>
+        </div>
+      </div>
+      </div>
+    </div>
+      `;
+    
+    //add in embeded code from uploadQNA to QNA
+    document.getElementById("uploadNew").innerHTML =embededCode;
+
+
+});
 
 function fetchModelDetails(modelId) {
   const apiUrl = `${apiBaseUrl}${modelId}`;
@@ -73,8 +124,7 @@ function fetchModelDetails(modelId) {
     });
 }
 
-// Loop through the list of model IDs and fetch details for each
+// Loop through to access each model data 
 modelIds.forEach(modelId => {
   fetchModelDetails(modelId);
 });
-

@@ -1,59 +1,43 @@
 <!DOCTYPE html>
 <html> 
-<head>
-  <link rel="stylesheet" href="normalise.css" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" type="text/css" />
-</head>
+  <head>
+    <link rel="stylesheet" href="normalise.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
 
-<body>
-  <!--Standard Navigation Bar-->
+  <body>
+    <!--Standard Navigation Bar-->
 
-  <div id="top">
-    <nav class="navtext">
-      <a href="index.html">Home</a>
-      <a href="challenge.html">Challenge</a>
-      <a href="rewards.html">Rewards</a>
-    </nav>
+    <div id="top">
+      <nav class="navtext">
+        <a href="index.html">Home</a>
+        <a href="challenge.html">Challenge</a>
+        <a href="rewards.html">Rewards</a>
+      </nav>
 
-    <div class="logo">
-      <a href="index.html"><img src="Pictures/logo.png" /></a>
+      <div class="logo">
+        <a href="index.html"><img src="Pictures/logo.png" /></a>
+      </div>
+
+      <div class="navicons">
+        <a href="uploadQNA.html"
+          ><img src="Pictures/Nav Bar - Upload Icon.png"
+        /></a>
+        <a href="contact.html"><img src="Pictures/Nav Bar - Phone Icon.png" /></a>
+      </div>
     </div>
 
-    <div class="navicons">
-      <a href="upload QnA.html"
-        ><img src="Pictures/Nav Bar - Upload Icon.png"
-      /></a>
-      <a href="contact.html"><img src="Pictures/Nav Bar - Phone Icon.png" /></a>
-    </div>
-  </div>
+    <!--Feed-->
 
-  <!--Feed-->
+    <!-------Row One------->
 
-  <!-------Row One------->
-
-  <span class="columnOnePadding"></span>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-  var username = localStorage.getItem("title");
-  var postText = localStorage.getItem("caption");
-  var modelLink = localStorage.getItem("link");
-
-
-  // Check if required data is available
-  if (username && postText && modelLink) {
-    document.body.innerHTML += `
-
-    `;
-  }
-});
-  </script>
-  <script defer src="js/script.js"></script>
-</body>
+    <span class="columnOnePadding"></span>
+    <script defer src="js/script.js"></script>
+  </body>
 </html>
