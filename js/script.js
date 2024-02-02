@@ -20,40 +20,33 @@ function fetchModelDetails(modelId) {
       return response.json();
     })
     .then(modelData => {
-      // Accessing specific information from the model data
+      // assigning variables
       const modelQn = modelData.name;
-      const profilePicture = modelData.user.profileUrl; // Assuming you want the first image in the avatar
+      const profilePicture = modelData.user.avatar.images[1].url; // Assuming you want the first image in the avatar
       const caption = modelData.description;
+      const embedModel = modelData.embedUrl;
 
-      // Example: Log model details to the console
+      // test model data 
       console.log(`Model Name: ${modelQn}`);
       console.log(`Profile Picture: ${profilePicture}`);
       console.log(`Description: ${caption}`);
+      console.log(`embedModel: ${embedModel}`);
+      
       
       document.body.innerHTML += `
       <div class="columnOne">
       <!--Post One-->
       <div class="postColumnOne">
         <div class="postProfile">
-          <img src="${profilePicture}" />
+          <div class="profilePicPadding">
+          <img src="${profilePicture}">
+          </div> 
           <h1>${modelQn}</h1>
         </div>
   
         <div class="postImage">
           <div class="sketchfab-embed-wrapper">
-            <iframe
-              title="IG manager_turntable"
-              frameborder="0"
-              allowfullscreen
-              mozallowfullscreen="true"
-              webkitallowfullscreen="true"
-              allow="autoplay; fullscreen; xr-spatial-tracking"
-              xr-spatial-tracking
-              execution-while-out-of-viewport
-              execution-while-not-rendered
-              web-share
-              src="https://sketchfab.com/models/9c3298aac6334509ae3e4366a1ae7107/embed"
-            ></iframe>
+          <iframe src="${embedModel}" allow="autoplay; fullscreen; vr" frameborder="0"></iframe>
           </div>
         </div>
   
@@ -73,8 +66,7 @@ function fetchModelDetails(modelId) {
       </div>
     </div>
       `;
-      // Use the data as needed in your application
-      // You can update your UI, perform calculations, etc.
+
     })
     .catch(error => {
       console.error(`Fetch error for model ID ${modelId}:`, error);
@@ -85,3 +77,4 @@ function fetchModelDetails(modelId) {
 modelIds.forEach(modelId => {
   fetchModelDetails(modelId);
 });
+

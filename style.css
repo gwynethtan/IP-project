@@ -257,12 +257,17 @@ label {
     flex-direction: row;
     align-items: center;
 }
-
-.postProfile img {
-    width: 40px;
+.profilePicPadding{
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
+    border-radius: 50%;
+}
+
+.postProfile img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* Adjust Post Icons */
