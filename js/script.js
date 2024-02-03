@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function submitForm() {
       `;
     
     //add in embeded code from uploadQNA to QNA
-    document.getElementById("uploadNew").innerHTML =embeddedCode;
+    document.getElementById("uploadNew").innerHTML = embeddedCode;
     ;}
 });
 
@@ -73,12 +73,17 @@ function fetchModelDetails(modelId) {
     })
     .then(modelData => {
       // assigning variables
+      const mod=modelData.uid;
       const modelQn = modelData.name;
       const profilePicture = modelData.user.avatar.images[1].url; // Assuming you want the first image in the avatar
       const caption = modelData.description;
       const embedModel = modelData.embedUrl;
 
       // test model data 
+      console.log(`Complete Model Data:${modelData} `);
+      console.log(`${mod}`);
+      console.log (`Model ID: ${modelId}`);
+      console.log(`Model Name: ${modelQn}`);
       console.log(`Model Name: ${modelQn}`);
       console.log(`Profile Picture: ${profilePicture}`);
       console.log(`Description: ${caption}`);
