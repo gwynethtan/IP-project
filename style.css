@@ -328,13 +328,12 @@ label {
 #commentPage {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    padding-top: 70px;
+    padding-top: 66px;
     padding-left: 60px;
 }
 
 /* Posted Image */
-.commentPicture {
+#commentPicture {
     flex-direction: row;
     width: 1450px;
     padding-right: 80px;
@@ -347,17 +346,21 @@ label {
     align-items: center;
 }
 
-.commentPictureProfile img {
-    width: 45px;
+.commentPictureProfilePadding {
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
 } 
 
+.commentPictureProfilePadding img {
+    border-radius: 50%;
+} 
+
 /* Sketchfab content takes up full width of its container */
 .commentPictureImage .sketchfab-embed-wrapper iframe {
     width: 100%;
-    height: 550px;
+    height: 420px;
+    border-radius: 1%;
 }
 
 /* Font for comment */
@@ -377,17 +380,25 @@ label {
 /* Comment Section Two*/
 
 /* Flexbox for Comment Section Two */
-.commentSection {
+#commentSection {
     display: flex;
     flex-direction: column;
     padding-right: 60px;
 }
 
-.comment {
+#comment {
     display: flex;
     flex-direction: row;
     width: 500px;
     padding-top: 60px;
+}
+
+/*properties used for null comments for posts created by user */
+.nullCommentProperty{
+    font-size: medium;
+    color:#2A456B;
+    display: flex; 
+    justify-content: center;
 }
 
 /* Comment Section Two: Profile Picture */
@@ -408,7 +419,7 @@ label {
 
 /* Comment Section Two: Input Comment Box */
 .commentDetails textarea {
-    width: 450px;
+    width: 400px;
     height: 60px;
     padding: 5px;
     margin-top: 10px;
@@ -425,7 +436,7 @@ label {
 /* Comment Section Two: "Comment" */
 .commentHeading h1 {
     font-size: 20px;
-    color: #272727;
+    color: #2A456B;
     font-weight: 600;
     margin: none;
     padding-bottom: 10px;
@@ -444,9 +455,14 @@ label {
     flex-direction: row;
 }
 
-.areaProfilePic img { /* Profile Pic */
-    width: 40px;
+.areaProfilePicPadding { /* Profile Pic */
     padding-right: 10px;
+}
+
+.areaProfilePicPadding img { /* Profile Pic */
+    border-radius: 50%;
+    height:32px; 
+    width:32px;
 }
 
 .areaProfileName h1 { /* "Janet Cindy" */
@@ -455,7 +471,6 @@ label {
     font-weight: 600;
     margin: 0;  
     padding-top: 10px;
-    padding-right: 220px;
 }
 
 /* Comment Section Two Icons */
@@ -464,13 +479,12 @@ label {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 10px;
-    padding-left: 10px;
+    margin-left: auto;
 }
 
 .areaProfileIcons img {
     width: 16px;
     height: 16px;
-    padding-left: 60px
 }
 
 .areaProfileIcons h3 {
@@ -497,7 +511,7 @@ label {
     font-weight: 300;
 }
 
-ol {
+.commentMessage {
     padding-left: 12px;
     margin: 0;
 }

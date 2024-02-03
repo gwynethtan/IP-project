@@ -1,179 +1,63 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="normalise.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
 
-<head>
-    <link rel="stylesheet" href="normalise.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
+    <body>
 
-<body>
+        <!--Standard Navigation Bar-->
 
-    <!--Standard Navigation Bar-->
+        <div id="top">
+            <nav class="navtext">
+                <a href="index.html">Home</a>
+                <a href="challenge.html">Challenge</a>
+                <a href="rewards.html">Rewards</a>
+            </nav>
 
-    <div id="top">
-        <nav class="navtext">
-            <a href="index.html">Home</a>
-            <a href="challenge.html">Challenge</a>
-            <a href="rewards.html">Rewards</a>
-        </nav>
-
-        <div class="logo">
-            <a href="index.html"><img src="Pictures/logo.png"></a>
-        </div>
-
-        <div class="navicons">
-            <a href="uploadQNA.html"><img src="Pictures/Nav Bar - Upload Icon.png"></a>
-            <a href="contact.html"><img src="Pictures/Nav Bar - Phone Icon.png"></a>
-        </div>
-    </div>
-
-    <div id="commentPage">
-
-        <!-- Comment Section One -->
-        <!-- Posted Image -->
-
-        <div class="commentPicture">
-
-            <!-- Profile Image  -->
-            <div class="commentPictureProfile">
-                <img src="Pictures/Home - Profile Pic.png">
-                <h1>I can't extrude..</h1>
+            <div class="logo">
+                <a href="index.html"><img src="Pictures/logo.png"></a>
             </div>
-                
-            <!-- SketchFeb -->
-            <div class="commentPictureImage">
-                <div class="sketchfab-embed-wrapper">
-                    <iframe title="IG manager_turntable" frameborder="0" 
-                    allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" 
-                    allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking 
-                    execution-while-out-of-viewport execution-while-not-rendered web-share 
-                    src="https://sketchfab.com/models/9c3298aac6334509ae3e4366a1ae7107/embed"></iframe>
-                </div>
-            </div>
-    
-            <div class="commentPictureComment">
-                <h1>Can someone teach me how to extrude edges? Can I merge vertex too??</h1>
+
+            <div class="navicons">
+                <a href="uploadQNA.html"><img src="Pictures/Nav Bar - Upload Icon.png"></a>
+                <a href="contact.html"><img src="Pictures/Nav Bar - Phone Icon.png"></a>
             </div>
         </div>
-    
-        <!--  Comment Section Two -->
-        <div class="commentSection">
-            <div class="comment">
-                <div class="commentImage">
-                    <img src="Pictures/Home - Profile Pic.png">
-                </div>
-        
-                <div class="commentDetails">
-                    <h1>Mr A B C Q</h1>
-                    <textarea placeholder="Type your comment..."></textarea>
-                </div>
+
+        <div id="commentPage">
+
+            <!-- Comment Section One -->
+            <!-- Posted Image -->
+
+            <div id="commentPicture">
+
+                <!-- Profile Image  -->
+
             </div>
         
-            <!-- Comment Heading -->
-            <div class="commentHeading">
-                <h1>Comments</h1>
-            </div>
-
-            <!-- Comments from Other users (One)-->
-            <div class="commentArea">
-
-                <div class="areaProfile">
-
-                    <div class="areaProfilePic">
-                        <img src="Pictures/Comment - 2UserProfile.png">
-                    </div>
-
-                    <div class="areaProfileName">
-                        <h1>Janet Cindy</h1>
-                    </div>
-
-                    <div class="areaProfileIcons">
-                        <img src="Pictures/Comment - Upvote Icon.png">
-                        <h3>127</h3>
-                    </div>
-
+            <!--  Comment Section Two -->
+            <div id="commentSection">
+                <div id="comment">
+                    
                 </div>
-
-                <div class="areaDetails">
-                    <h1>
-                        <ol>
-                            <li>Activate the Move, Rotate, or Scale Tool and Shift + drag the manipulator (also known as smart extruding).</li>
-                            <li>Select Edit Mesh > Extrude.</li>
-                            <li>Click in the Modeling Toolkit.</li>
-                            <li>Press Ctrl + E.</li>
-                        </ol>
-                    </h1>
-                </div>
-
-            </div>
-
             
-            <!-- Comments from Other users (Two)-->
-            <div class="commentArea">
-
-                <div class="areaProfile">
-
-                    <div class="areaProfilePic">
-                        <img src="Pictures/Comment - 1UserProfile.png">
-                    </div>
-
-                    <div class="areaProfileName">
-                        <h1>Lynette Tan</h1>
-                    </div>
-
-                    <div class="areaProfileIcons">
-                        <img src="Pictures/Comment - Upvote Icon.png">
-                        <h3>90</h3>
-                    </div>
-
+                <!-- Comment Heading -->
+                <div class="commentHeading">
+                    <h1>Comments</h1>
                 </div>
 
-                <div class="areaDetails">
-                    <h1>You can try a variety of methods. This kind of things need to play around abit.
-                        Toggle on and off soft mode 
-                        Shut down maya and reset settings 
-                        Press C in case you turned on soft mode</h1>
-                </div>
+                <!-- Comments from Other users-->
+                <div id="allComments">
 
+                </div>
             </div>
-
-            <!-- Comments from Other users (Three)-->
-            <div class="commentArea">
-
-                <div class="areaProfile">
-
-                    <div class="areaProfilePic">
-                        <img src="Pictures/Comment - 2UserProfile.png">
-                    </div>
-
-                    <div class="areaProfileName">
-                        <h1>Candy Miller</h1>
-                    </div>
-
-                    <div class="areaProfileIcons">
-                        <img src="Pictures/Comment - Upvote Icon.png">
-                        <h3>40</h3>
-                    </div>
-
-                </div>
-
-                <div class="areaDetails">
-                    <h1>
-                        <ol>
-                            <li>Activate the Move, Rotate, or Scale Tool and Shift + drag the manipulator (also known as smart extruding).</li>
-                            <li>Select Edit Mesh > Extrude.</li>
-                            <li>Click in the Modeling Toolkit.</li>
-                            <li>Press Ctrl + E.</li>
-                        </ol>
-                    </h1>
-                </div>
-
-            </div>
-            
         </div>
-
-    </div>
-    
-</body>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+        <script src="js/comment.js"></script>
+    </body>
+</html>

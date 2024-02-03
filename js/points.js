@@ -6,7 +6,7 @@ function deductPoints(button) {
         userPoints -= pointsToDeduct;
         userPointsElement.innerText = userPoints;
 
-        // select other vouchers data
+        // for other vouchers that are not clicked on but cannot be redeemed by user anyways due to insufficient points
         var allRewardsCols = document.querySelectorAll('.rewardsCol');
         allRewardsCols.forEach(function (rewardsCol) {
             var voucherImage = rewardsCol.querySelector('img');
