@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function submitForm() {
           </div>
     
           <div class="postIcons">
-            <span class="likeAction"  onclick="toggleLike(this)"><img src="Pictures/Home - Heart Icon.png" /></span>
+            <span class="likeAction" likeCheck="0" onclick="toggleLike(this)"><img src="Pictures/Home - Heart Icon.png"></span>
             <a href="comment.html??modelID=${encodeURIComponent(modelID)}&embeddedModel=${encodeURIComponent(modelID)}&profilePicture=${encodeURIComponent(profilePicture)}&modelQn=${encodeURIComponent(modelQn)}&caption=${encodeURIComponent(caption)}">
               <img src="Pictures/Home - Comment Icon.png" />
             </a>
@@ -104,7 +104,7 @@ function fetchModelDetails(modelIDEach) {
           </div>
     
           <div class="postIcons">
-            <span class="likeAction"  onclick="toggleLike(this)"><img src="Pictures/Home - Heart Icon.png" /></span>
+            <span class="likeAction" likeCheck="0" onclick="toggleLike(this)"><img src="Pictures/Home - Heart Icon.png"></span>
             <a href="comment.html??modelID=${modelID}&embeddedModel=${embeddedModel}&profilePicture=${encodeURIComponent(profilePicture)}&modelQn=${encodeURIComponent(modelQn)}&caption=${encodeURIComponent(caption)}">
               <img src="Pictures/Home - Comment Icon.png" />
             </a>
@@ -130,3 +130,23 @@ function fetchModelDetails(modelIDEach) {
 modelIDs.forEach(modelIDEach => {
   fetchModelDetails(modelIDEach);
 });
+
+
+// like and unlike function 
+function toggleLike(span) {
+  var likeCheck = parseInt(span.getAttribute("likeCheck")); //used as a checker to see whether post has been liked or unliked 
+  console.log("toggle working");
+
+  if (likeCheck === 0) {
+    span.querySelector('img').src = "Pictures/Home - Heart Colour Icon.png";
+    likeCheck += 1;
+    console.log("liked");
+  } else {
+    span.querySelector('img').src = "Pictures/Home - Heart Icon.png";
+    likeCheck -= 1;
+    console.log("unliked");
+  }
+
+  // Update the attribute value
+  span.setAttribute("likeCheck", likeCheck.toString());
+}
