@@ -7,7 +7,7 @@ const modelIDs = [
 ];
 
 //get variables from the uploadQNA
-document.addEventListener("DOMContentLoaded", function submitForm() {
+document.addEventListener("DOMContentLoaded", function submitQNAForm() {
   const modelQn = localStorage.getItem("title");
   const caption = localStorage.getItem("caption");
   const modelID = localStorage.getItem("modelID"); 

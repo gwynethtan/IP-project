@@ -1,94 +1,127 @@
 <!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="normalise.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
 
-<head>
-    <link rel="stylesheet" href="normalise.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
+    <body>
 
-<body>
+        <!--Standard Navigation Bar-->
 
-    <!--Standard Navigation Bar-->
+        <div id="top">
+            <nav class="navtext">
+                <a href="index.html">Home</a>
+                <a href="challenge.html">Challenge</a>
+                <a href="rewards.html">Rewards</a>
+            </nav>
 
-    <div id="top">
-        <nav class="navtext">
-            <a href="index.html">Home</a>
-            <a href="challenge.html">Challenge</a>
-            <a href="rewards.html">Rewards</a>
-        </nav>
-
-        <div class="logo">
-            <a href="index.html"><img src="Pictures/logo.png"></a>
-        </div>
-
-        <div class="navicons">
-            <a href="uploadQNA.html"><img src="Pictures/Nav Bar - Upload Icon.png"></a>
-            <a href="contact.html"><img src="Pictures/Nav Bar - Phone Icon.png"></a>
-        </div>
-    </div>
-
-    <div id="uploadPageAchi">
-        <div class="headingAchi">
-            <h2>Posted to</h2>
-        </div>
-
-        <div class="selectorAchi">
-            <div class="selectorAchi_QnA">
-                <a href="uploadQNA.html">QnA</a>
+            <div class="logo">
+                <a href="index.html"><img src="Pictures/logo.png"></a>
             </div>
 
-            <div class="selectorAchi_Achi">
-                <a href="achiever.html">Achiever</a>
+            <div class="navicons">
+                <a href="uploadQNA.html"><img src="Pictures/Nav Bar - Upload Icon.png"></a>
+                <a href="contact.html"><img src="Pictures/Nav Bar - Phone Icon.png"></a>
             </div>
         </div>
 
-        <div class="titleAchi">
-            <label for="title">Competion Title:</label><br>
-            <input type="text" id="title" name="title"><br>
-        </div>
-
-        <div class="linkAchi">
-            <label for="link">Image Link:</label><br>
-            <input type="text" id="link" name="link"><br>
-        </div>
-        
-        <div class="players">
-            <div class="captionAchi">
-                <label for="caption">Players In Total:</label><br>
-                <input type="text" id="caption" name="caption"><br>
+        <div id="uploadPageChallenge">
+            <div class="headingChallenge">
+                <h2>Posted to</h2>
             </div>
 
-            <div class="playersAchi">
-                <label for="caption">Players Needed:</label><br>
-                <input type="text" id="caption" name="caption"><br>
-            </div>
-        </div>
+            <div class="selectorChallenge">
+                <div class="selectorChallenge_QnA">
+                    <a href="uploadQNA.html">QnA</a>
+                </div>
 
-        <div class="dateLevel">
+                <div class="selectorChallenge_Challenge">
+                    <a href="achiever.html">Achiever</a>
+                </div>
+            </div>
+
+            <div class="titleChallenge">
+                <label for="title">Challenge Title:</label><br>
+                <input type="text" id="challengeTitle" name="title"><br>
+            </div>
+
+            <div class="linkChallenge">
+                <label for="link">Image Link:</label><br>
+                <input type="text" id="challengeLink" name="link"><br>
+            </div>
+
+            <div class="captionChallenge">
+                <label for="caption">Challenge caption:</label><br>
+                <textarea id="challengeCaption" name="link"></textarea><br>
+            </div>
             
-            <div class="dateAchi">
-                <label for="date">Select a Date:</label><br>
-                <input type="date" id="date" name="date"><br>
+            <div class="members">
+                <div class="membersInvolved">
+                    <label for="membersInvolved">Current members involved:</label><br>
+                    <input type="text" id="membersInvolved" name="caption"><br>
+                </div>
+                <div class="membersTotal">
+                    <label for="membersTotal">Total members needed for competition:</label><br>
+                    <input type="text" id="membersTotal" name="caption"><br>
+                </div>
             </div>
 
-            <div class="levelAchi">
-                <label for="date">Select a Level:</label><br>
-                <select id="level" name="level">
-                    <option value="easy">Easy</option>
-                    <option value="intermediate">Intermediate</option>
-                    <option value="advance">Advance</option>
-                </select><br>
-            </div>    
+            <div class="dateLevel">
+                
+                <div class="dateChallenge">
+                    <label for="date">Select a Date:</label><br>
+                    <input type="date" id="challengeDate" name="date"><br>
+                </div>
 
+                <div class="levelChallenge">
+                    <label for="date">Select a Level:</label><br>
+                    <select id="level" name="level">
+                        <option value="easy">Easy</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advance">Advance</option>
+                    </select><br>
+                </div>    
+
+            </div>
+
+            <div class="uploadPostBtn">
+                <form onsubmit="submitChallengeForm(event)" style="display: flex; justify-content: center; width: auto;">
+                    <input class='postBtn' type="submit" value="POST">
+                </form>
+            </div>
         </div>
+        <script>
+            function submitChallengeForm(challengeUpload) {
+                challengeUpload.preventDefault();
 
-        <div class="uploadPostBtn">
-            <form action="posted.html" style="display: flex; justify-content: center; width: auto;">
-                <input class='postBtn' type="submit" value="POST">
-            </form>
-        </div>
-    </div>
+                // Get the content from the input field
+                const challengeTitle = document.getElementById('challengeTitle').value;
+                const challengeLink = document.getElementById('challengeLink').value;
+                const challengeCaption = document.getElementById('challengeCaption').value;
+                const membersTotal = document.getElementById('membersTotal').value;
+                const membersInvolved = document.getElementById('membersInvolved').value;
+                const challengeDate = document.getElementById('challengeDate').value;
+                const level = document.getElementById('level').value;
 
-</body>
+                // Save content to localStorage
+                localStorage.setItem('challengeTitle',challengeTitle);
+                localStorage.setItem('challengeLink',challengeLink);
+                localStorage.setItem('challengeCaption',challengeCaption)
+                localStorage.setItem('membersTotal', membersTotal);
+                localStorage.setItem('membersInvolved', membersInvolved);
+                localStorage.setItem('challengeDate', challengeDate);
+                localStorage.setItem('level', level);
+
+                //redirect to challenge page 
+                window.location.href = "challenge.html"; 
+
+            }
+
+
+        </script>
+    </body>
+</html>

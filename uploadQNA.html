@@ -36,7 +36,7 @@
 
             <div class="selectorQnA">
                 <div class="selectorQnA_QnA">
-                    <a href="Upload QnA.html">QnA</a>
+                    <a href="uploadQNA.html">QnA</a>
                 </div>
 
                 <div class="selectorQnA_Achi">
@@ -60,14 +60,14 @@
             </div>
 
             <div class="uploadPostBtn">
-                <form onsubmit="submitForm(event)" style="display: flex; justify-content: center; width: auto;">
+                <form onsubmit="submitQNAForm(event)" style="display: flex; justify-content: center; width: auto;">
                     <input class='postBtn' type="submit" value="POST">
                 </form>
             </div>
 
         </div>
         <script>
-            function submitForm(qnaUpload) {
+            function submitQNAForm(qnaUpload) {
                 qnaUpload.preventDefault();
 
                 // Get the content from the input field
@@ -85,6 +85,5 @@
 
             }
         </script>
-
     </body>
 </html> 
