@@ -61,6 +61,21 @@ body {
     height: auto;
 }
 
+/* Reward page profile picture */
+#rewardProfile {
+    display: flex;
+    flex-basis: 80%;
+    justify-content: center;
+    padding-right: 230px;
+    padding-top: 10px;
+}
+
+#rewardProfile img {
+    max-width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
 /* icons */
 .navicons {
     display: flex;
@@ -1473,5 +1488,3 @@ input[type="submit"] {
         width: 100%;
     }
 }
-
-

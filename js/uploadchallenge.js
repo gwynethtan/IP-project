@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function submitChallengeForm() {
                     <h4>By ${challengeDate}</h4>
                 </div>
                 <div class="challengePostBtn">
-                    <form action="joined.html" style="display: flex; justify-content: center; width: auto;">
+                    <form onsubmit="return joinChallenge(${competitionPoint});return false;" style="display: flex; justify-content: center; width: auto;">
                         <input class='challengePostBtn' type="submit" value="JOIN">
                     </form>
                 </div>
