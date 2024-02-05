@@ -10,14 +10,17 @@ document.addEventListener("DOMContentLoaded", function submitChallengeForm() {
 
     //updating levelPic by image
     var levelPic="";
+    var competitionPoint=50;
     if (level=="easy"){
         levelPic="Pictures/Challenge - Green.png";
     }
     else if (level=="intermediate"){
         levelPic="Pictures/Challenge - Orange.png";
+        competitionPoint+=10;
     }
     else{
         levelPic="Pictures/Challenge - Red.png";
+        competitionPoint+=20;
     }
 
     //to ensure formating of post available when inputs from uploadQNA is avail
