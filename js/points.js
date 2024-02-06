@@ -8,7 +8,7 @@ var userPoints = parseInt(localStorage.getItem("userPoints")) || 700; //reset to
 //set the localStorage 
 
 //border color test
-//var userPoints = 3000; //reset to 700 if its 0
+//var userPoints = 7000; //reset to 700 if its 0
 
 console.log (`user : ${userPoints}`);
 

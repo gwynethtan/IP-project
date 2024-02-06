@@ -45,11 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function updateComments(comments) {
     let commentsHTML = '';
-    var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
-    console.log(`${rewardProfileImageURL}`);
-    var borderColor =localStorage.getItem("borderColor");
-    console.log(`${borderColor}`);
 
+    //for profile picture design 
+    var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
+    var borderColor =localStorage.getItem("borderColor");
+    
     for (const comment of comments) {
         // HTML for each comment, updated with new inputs 
         commentsHTML += `
