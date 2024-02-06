@@ -16,27 +16,38 @@ console.log (`user : ${userPoints}`);
 userPointsElement.innerText = userPoints; 
 
 var rewardProfile = document.getElementById("rewardProfile").querySelector('img');
+var rewardProfileImage = rewardProfile.src;
 
+localStorage.setItem("rewardProfileImage", rewardProfileImage);
+console.log(`${rewardProfileImage}`);
 
-function borderColor() {
+// Set initial border color in localStorage
+var borderColor = "rgba(0, 0, 0, 0)"; // Default border color
+localStorage.setItem("borderColor", borderColor);
+
+function setBorderColor() {    
+    // Determine the border color based on user points
     if (userPoints < 3000) {
-        rewardProfile.style.border = "none";
-    }
-    else if (userPoints>=3000 && userPoints<5000){
-        rewardProfile.style.border = "3px solid #7A601D"; 
-    }
-    else if (userPoints>=5000 && userPoints<10000){
-        rewardProfile.style.border = "3px solid #B7B7B7"; 
-    }
-
-    else if (userPoints>=10000){
-        rewardProfile.style.border="3px solid #D5B255";
+        borderColor = "rgba(0, 0, 0, 0)";
+    } else if (userPoints >= 3000 && userPoints < 5000) {
+        borderColor = "#7A601D";
+    } else if (userPoints >= 5000 && userPoints < 10000) {
+        borderColor = "#B7B7B7";
+    } else if (userPoints >= 10000) {
+        borderColor = "#D5B255";
     }
 
-    console.log("yes");
-;}
+    // Apply the border color to the rewardProfile
+    rewardProfile.style.boxSizing = "border-box";
+    rewardProfile.style.border = `4px solid ${borderColor}`; 
+    console.log(`${borderColor}`);
 
-borderColor();
+    // Update the border color in localStorage
+    localStorage.setItem("borderColor", borderColor);
+}
+
+setBorderColor();
+
 
 //test 
 //var userPoints = localStorage.setItem("userPoints", originalPoints) && originalPoints;
@@ -49,7 +60,6 @@ borderColor();
         var voucherImage = rewardsCol.querySelector('img');
         var claimButton = rewardsCol.querySelector('.colBtn1'); 
         var pointsRequired = parseInt(claimButton.getAttribute("data-points"));
-        console.log ("hi");
         // change other vouchers' image and button color if cannot redeem
         if (userPoints < pointsRequired) {
             voucherImage.src = "Pictures/5.png";
@@ -57,7 +67,7 @@ borderColor();
         }
 
         //update border color
-        borderColor();
+        setBorderColor();
     });
     }      
         

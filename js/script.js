@@ -22,43 +22,44 @@ document.addEventListener("DOMContentLoaded", function submitQNAForm() {
 
   //to ensure formating of post available when inputs from uploadQNA is avail
   if (modelQn && caption && modelID){
-  document.body.innerHTML += `
-      <div class="columnOne">
-        <!--Post One-->
-        <div class="postColumnOne">
-          <div class="postProfile">
-            <div class="profilePicPadding">
-            <img src=${profilePicture}>
-            </div> 
-            <h1>${modelQn}</h1>
-          </div>
-    
-          <div class="postImage">
-            <div class="sketchfab-embed-wrapper">
-            <div id="galleryModel"> </div>
+    var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
+    var borderColor =localStorage.getItem("borderColor");
+    document.body.innerHTML += `
+        <div class="columnOne">
+          <!--Post One-->
+          <div class="postColumnOne">
+            <div class="postProfile">
+              <div class="profilePicPadding">
+                <img src="${rewardProfileImageURL}" style="box-sizing: border-box; border: 5px solid ${borderColor}">
+              </div> 
+              <h1>${modelQn}</h1>
             </div>
-          </div>
-    
-          <div class="postIcons">
-            <span class="likeAction" likeCheck="0" onclick="toggleLike(this)"><img src="Pictures/Home - Heart Icon.png"></span>
-            <a href="comment.html??modelID=${encodeURIComponent(modelID)}&embeddedModel=${encodeURIComponent(modelID)}&profilePicture=${encodeURIComponent(profilePicture)}&modelQn=${encodeURIComponent(modelQn)}&caption=${encodeURIComponent(caption)}">
-              <img src="Pictures/Home - Comment Icon.png" />
-            </a>
-          </div>
-    
-          <div class="postComment">
-            <h1>
-            ${caption}
-            </h1>
+      
+            <div class="postImage">
+              <div class="sketchfab-embed-wrapper">
+              <div id="galleryModel"> </div>
+              </div>
+            </div>
+      
+            <div class="postIcons">
+              <span class="likeAction" likeCheck="0" onclick="toggleLike(this)"><img src="Pictures/Home - Heart Icon.png"></span>
+              <a href="comment.html??modelID=${encodeURIComponent(modelID)}&embeddedModel=${encodeURIComponent(modelID)}&profilePicture=${encodeURIComponent(profilePicture)}&modelQn=${encodeURIComponent(modelQn)}&caption=${encodeURIComponent(caption)}">
+                <img src="Pictures/Home - Comment Icon.png" />
+              </a>
+            </div>
+      
+            <div class="postComment">
+              <h1>
+              ${caption}
+              </h1>
+            </div>
           </div>
         </div>
       </div>
-    </div>
       `;
-    
-    //add in embeded code from uploadQNA to QNA
-    document.getElementById("galleryModel").innerHTML = modelID;
-    ;}
+      //add in embeded code from uploadQNA to QNA
+      document.getElementById("galleryModel").innerHTML = modelID;
+      ;}
 });
 
 function fetchModelDetails(modelIDEach) {

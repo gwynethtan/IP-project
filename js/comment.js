@@ -45,13 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function updateComments(comments) {
     let commentsHTML = '';
+    var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
+    console.log(`${rewardProfileImageURL}`);
+    var borderColor =localStorage.getItem("borderColor");
+    console.log(`${borderColor}`);
+
     for (const comment of comments) {
         // HTML for each comment, updated with new inputs 
         commentsHTML += `
             <div class="commentArea">
                 <div class="areaProfile">
                     <div class="areaProfilePicPadding">
-                        <img src="Pictures/Home - Profile Pic.png">
+                        <img src="${rewardProfileImageURL}" style="box-sizing: border-box; border: 3px solid ${borderColor}">
                     </div>
                     <div class="areaProfileName">
                         <h1>You</h1>
@@ -91,6 +96,9 @@ function isCode(modelID) {
   }
   
 function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption) {
+    var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
+    var borderColor =localStorage.getItem("borderColor");
+
     // test whether input is code from uploadQNA form
     if (isCode(modelID)) {
         console.log("The modelID contains code.");
@@ -98,7 +106,9 @@ function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption)
         //insert html for left side content from gallery page 
         document.getElementById("commentPicture").innerHTML += `                
         <div class="commentPictureProfile">
-            <span class="commentPictureProfilePadding"><img src="${profilePicture}"></span>
+            <span class="commentPictureProfilePadding">
+                <img src="${rewardProfileImageURL}" style="box-sizing: border-box; border: 3px solid ${borderColor}">
+            </span>
             <h1>${modelQn}</h1>
         </div>
         
@@ -150,7 +160,7 @@ function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption)
         document.getElementById("comment").innerHTML=
             `
             <div class="commentImage">
-                <img src="Pictures/Home - Profile Pic.png">
+                <img src="${rewardProfileImageURL}" style="box-sizing: border-box; border: 3px solid ${borderColor}">
             </div>
     
             <div class="commentDetails">

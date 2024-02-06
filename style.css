@@ -280,6 +280,7 @@ label {
 }
 
 .postProfile img {
+    height:48px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
@@ -369,6 +370,8 @@ label {
 
 .commentPictureProfilePadding img {
     border-radius: 50%;
+    width: 48px;
+    aspect-ratio: 1/1;
 } 
 
 /* Sketchfab content takes up full width of its container */
@@ -419,9 +422,10 @@ label {
 /* Comment Section Two: Profile Picture */
 .commentImage img{
     width: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
 }
 
 /* Comment Section Two: Font for Username */
@@ -1268,7 +1272,7 @@ input[type="submit"] {
 .contactHeading {
     display: flex;
     flex-direction: row;
-    padding-top: 150px;
+    padding-top: 100px;
     justify-content: center;
 }
 
@@ -1287,7 +1291,7 @@ input[type="submit"] {
 
 .emailPadding {
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 26px;
 }
 
 .contactEmail {
@@ -1364,10 +1368,12 @@ input[type="submit"] {
 .questionName {
     display: flex;
     flex-direction: row;
-    border: 1px solid #2A456B;
+    border: none;
     width: 50%; 
     margin: auto; 
-    border-radius: 5px; 
+    border-radius: 15px; 
+    background-color: #f5f5f5;
+    margin-top: 20px;
 }
 
 .questionName input {
@@ -1380,16 +1386,18 @@ input[type="submit"] {
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    width:100%;
 }
 
 /* Form Email */
 .questionEmail {
     display: flex;
     flex-direction: row;
-    border: 1px solid #2A456B;
+    border: none;
     width: 50%; 
     margin: auto; 
-    border-radius: 5px; 
+    border-radius: 15px; 
+    background-color: #f5f5f5;
 }
 
 .questionEmail input {
@@ -1402,21 +1410,23 @@ input[type="submit"] {
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    width:100%;
 }
 
 .emailPadding {
     display: flex;
-    padding-top: 15px;
+    padding-top: 26px;
 }
 
 /* Form Description */
 .questionDescrip {
     display: flex;
     flex-direction: row;
-    border: 1px solid #2A456B;
+    border: none;
     width: 50%; 
     margin: auto; 
-    border-radius: 5px; 
+    border-radius: 15px; 
+    background-color: #f5f5f5;
 }
 
 .questionDescrip input {
@@ -1429,6 +1439,8 @@ input[type="submit"] {
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    width:100%;
+
 }
 
 /* Button */

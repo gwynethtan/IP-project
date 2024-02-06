@@ -6,10 +6,8 @@ function joinChallenge (competitionPoint){
     //update local storage for points
     localStorage.setItem("userPoints", userPoints);
     console.log(` ${userPoints}`);
-
     //redirect to sent page
     window.location.href = "sent.html";
-    
 }
 
 //redirct to sent page 
