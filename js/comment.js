@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
 
     // getting required variables for left side of post
@@ -16,7 +17,72 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // display content on screen
     fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption);
+
+    //for user to input in comments
+    document.getElementById("userInput").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            console.log("Enter key pressed");
+            var commentItem = this.value.trim(); //remove any accidental whitespace 
+            //ensure comment has content 
+            if (commentItem !== "") { 
+                // Get the current page URL
+                let currentPageUrl = window.location.href;
+    
+                // Retrieve existing comments for the current page from local storage
+                let pageComments = JSON.parse(localStorage.getItem('comments_' + currentPageUrl)) || [];
+
+                // Keep the new comments back in local storage
+                pageComments.push(commentItem); 
+                localStorage.setItem('comments_' + currentPageUrl, JSON.stringify(pageComments));
+    
+                updateComments(pageComments);
+                this.value = ""; // Clear the textarea after user submit
+            }
+        }
+    });
 });
+
+function updateComments(comments) {
+    let commentsHTML = '';
+    for (const comment of comments) {
+        // HTML for each comment, updated with new inputs 
+        commentsHTML += `
+            <div class="commentArea">
+                <div class="areaProfile">
+                    <div class="areaProfilePicPadding">
+                        <img src="Pictures/Home - Profile Pic.png">
+                    </div>
+                    <div class="areaProfileName">
+                        <h1>You</h1>
+                    </div>
+                </div>
+                <div class="areaDetails">
+                    <h1>
+                        <div class="commentMessage">
+                            ${comment}
+                        </div>
+                    </h1>
+                </div>
+            </div>`;
+    }
+
+    // Update comment
+    document.getElementById("allComments").innerHTML = commentsHTML;
+}
+
+// Function to retrieve and display comments when the page loads
+function displayComments() {
+    let currentPageUrl = window.location.href;
+
+    // Retrieve existing comments for the current page from local storage
+    let pageComments = JSON.parse(localStorage.getItem('comments_' + currentPageUrl)) || [];
+
+    updateComments(pageComments);
+}
+
+//display comments on screen
+displayComments();
 
 //validate whether it is code or actual ID
 function isCode(modelID) {
@@ -88,8 +154,8 @@ function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption)
             </div>
     
             <div class="commentDetails">
-                <h1>Mr A B C Q</h1>
-                <textarea placeholder="Type your comment..."></textarea>
+                <h1>You</h1>
+                <textarea id="userInput" placeholder="Type your comment..."></textarea>
             </div>
             `
 
@@ -113,8 +179,6 @@ function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption)
                 .then(modelData => {
                 const commentList=modelData.results;
                 console.log("list:", commentList);
-
-                let eachCommentHTML='';
 
                 for (const eachComment of commentList) {
                     const commenter=eachComment.user.username; 

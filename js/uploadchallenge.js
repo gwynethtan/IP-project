@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function submitChallengeForm() {
 
     //updating levelPic by image
     var levelPic="";
-    var competitionPoint=50;
+    var competitionPoint=50;  //prolly remove 
     if (level=="easy"){
         levelPic="Pictures/Challenge - Green.png";
     }
@@ -48,11 +48,6 @@ document.addEventListener("DOMContentLoaded", function submitChallengeForm() {
                 <div class="rightFeedSmallDetails">
                     <h3>Current members involved: ${membersInvolved}/${membersTotal}</h3>
                     <h4>By ${challengeDate}</h4>
-                </div>
-                <div class="challengePostBtn">
-                    <form onsubmit="return joinChallenge(${competitionPoint});return false;" style="display: flex; justify-content: center; width: auto;">
-                        <input class='challengePostBtn' type="submit" value="JOIN">
-                    </form>
                 </div>
             </div>
         `;

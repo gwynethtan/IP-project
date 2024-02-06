@@ -427,7 +427,7 @@ label {
 /* Comment Section Two: Font for Username */
 .commentDetails h1 {
     font-size: 18px;
-    color: #272727;
+    color: #2A456B;
     font-weight: 600;
     margin: 0;
 }
@@ -480,7 +480,7 @@ label {
     width:32px;
 }
 
-.areaProfileName h1 { /* "Janet Cindy" */
+.areaProfileName h1 { 
     font-size: 14px;
     color: #272727;
     font-weight: 600;

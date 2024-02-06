@@ -1,9 +1,12 @@
+//test statement
+//localStorage.clear();
+
 const apiBaseUrl = "https://api.sketchfab.com/v3/models/";
 const apiKey = "4351796cf6b8414498e5db4f437be245"; 
 
 //list of models 
 const modelIDs = [
-  "d9a2d94179384803af7456d633283496", "266316c0b16e4bf8abf7f8274e33deec", "d80bb55a259642d897e31bc038e1c396"
+  "8be96c1d3d0c491aa3c2c607bb7f6b33", "266316c0b16e4bf8abf7f8274e33deec", "d80bb55a259642d897e31bc038e1c396"
 ];
 
 //get variables from the uploadQNA

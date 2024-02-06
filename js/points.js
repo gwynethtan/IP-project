@@ -17,17 +17,26 @@ userPointsElement.innerText = userPoints;
 
 var rewardProfile = document.getElementById("rewardProfile").querySelector('img');
 
-if (userPoints>=3000 && userPoints<5000){
-    rewardProfile.style.border = "3px solid #7A601D"; 
-}
-else if (userPoints>=5000 && userPoints<10000){
-    rewardProfile.style.border = "3px solid #B7B7B7"; 
-}
 
-else if (userPoints>=10000){
-    rewardProfile.style.border="3px solid #D5B255";
-}
+function borderColor() {
+    if (userPoints < 3000) {
+        rewardProfile.style.border = "none";
+    }
+    else if (userPoints>=3000 && userPoints<5000){
+        rewardProfile.style.border = "3px solid #7A601D"; 
+    }
+    else if (userPoints>=5000 && userPoints<10000){
+        rewardProfile.style.border = "3px solid #B7B7B7"; 
+    }
 
+    else if (userPoints>=10000){
+        rewardProfile.style.border="3px solid #D5B255";
+    }
+
+    console.log("yes");
+;}
+
+borderColor();
 
 //test 
 //var userPoints = localStorage.setItem("userPoints", originalPoints) && originalPoints;
@@ -46,6 +55,9 @@ else if (userPoints>=10000){
             voucherImage.src = "Pictures/5.png";
             claimButton.style.backgroundColor = "grey"; 
         }
+
+        //update border color
+        borderColor();
     });
     }      
         
@@ -61,6 +73,7 @@ function deductPoints(button) {
 
         // for other vouchers that are not clicked on but cannot be redeemed by user anyways due to insufficient points
         checkRedeemable() ;
+
     } else {
         console.log("Cannot claim since not enough points");
     }
