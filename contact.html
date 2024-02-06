@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 
-<head>
-    <link rel="stylesheet" href="normalise.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" type="text/css">
-</head>
+<html>
+    <head>
+        <link rel="stylesheet" href="normalise.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
 
-<body>
+    <body>
 
-    <!--Standard Navigation Bar-->
-    <div id="top">
-        <nav class="navtext">
-            <a href="index.html">Home</a>
-            <a href="challenge.html">Challenge</a>
-            <a href="rewards.html">Rewards</a>
-        </nav>
+        <!--Standard Navigation Bar-->
+        <div id="top">
+            <nav class="navtext">
+                <a href="index.html">Home</a>
+                <a href="challenge.html">Challenge</a>
+                <a href="rewards.html">Rewards</a>
+            </nav>
 
-        <div class="logo">
-            <a href="index.html"><img src="Pictures/logo.png"></a>
-        </div>
+            <div class="logo">
+                <a href="index.html"><img src="Pictures/logo.png"></a>
+            </div>
 
-        <div class="navicons">
-            <a href="uploadQNA.html"><img src="Pictures/Nav Bar - Upload Icon.png"></a>
-            <a href="contact.html"><img src="Pictures/Nav Bar - Phone Icon.png"></a>
-        </div>
-    </div>
-
-    <!--Contact Heading-->
-    <div class="contactHeading">
-        <h1>Get In Touch</h1>
-    </div>
-
-    <!--Get In Touch Section-->
-    <div class="contactSection1">
-
-        <div class="emailPadding">
-            <div class="contactEmail">
-                <img src="Pictures/Contact - Mail Icon.png">
-                <h3>rolemodels@connect.np.edu.sg</h3>
+            <div class="navicons">
+                <a href="uploadQNA.html"><img src="Pictures/Nav Bar - Upload Icon.png"></a>
+                <a href="contact.html"><img src="Pictures/Nav Bar - Phone Icon.png"></a>
             </div>
         </div>
 
-        <div class="contactPhone">
-            <img src="Pictures/Contact - Phone Icon.png">
-            <h3>6622 0088</h3>
+        <!--Contact Heading-->
+        <div class="contactHeading">
+            <h1>Get In Touch</h1>
         </div>
 
-    </div>
+        <!--Get In Touch Section-->
+        <div class="contactSection1">
 
-    <!--Form-->
-    <div class="contactQuestion">
-        <h1>Questions? Drop us an email!</h1>
-    </div>
+            <div class="emailPadding">
+                <div class="contactEmail">
+                    <img src="Pictures/Contact - Mail Icon.png">
+                    <h3>rolemodels@connect.np.edu.sg</h3>
+                </div>
+            </div>
 
-    <div class="questionName">
-        <input type="text" placeholder="Name">
-    </div>
+            <div class="contactPhone">
+                <img src="Pictures/Contact - Phone Icon.png">
+                <h3>6622 0088</h3>
+            </div>
 
-    <div class="emailPadding">
-        <div class="questionEmail">
-            <input type="text" placeholder="Email">
         </div>
-    </div>
 
-    <div class="questionDescrip">
-        <input type="text" placeholder="Description">
-    </div>
-    
-    <div class="contactPostBtn">
-        <form action="sent.html" style="display: flex; justify-content: center; width: auto;">
-            <input class='contactBtn' type="submit" value="SEND">
-        </form>
-    </div>
+        <!--Form-->
+        <div class="contactQuestion">
+            <h1>Questions? Drop us an email!</h1>
+        </div>
+
+        <div id="contactForm">
+            <div class="questionName">
+                <input id="contactName" type="text" placeholder="Name">
+            </div>
+        
+            <div class="emailPadding">
+                <div class="questionEmail">
+                    <input id="contactEmail" type="text" placeholder="Email">
+                </div>
+            </div>
+        
+            <div class="questionDescrip">
+                <input id="contactDescrip" type="text" placeholder="Description">
+            </div>
+            
+            <div class="contactPostBtn">
+                <form action="sent.html" style="display: flex; justify-content: center; width: auto;">
+                    <input id='contactBtn' type="submit" value="SEND">
+                </form>
+            </div>
+        </div>
+        <script src="js/contact.js"></script>
+    </body>
+</html>
 
     
 
