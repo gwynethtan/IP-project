@@ -1,10 +1,7 @@
-//test statement
-//localStorage.clear();
-
 const apiBaseUrl = "https://api.sketchfab.com/v3/models/";
 const apiKey = "4351796cf6b8414498e5db4f437be245"; 
 
-//list of models 
+//list of models ids
 const modelIDs = [
   "8be96c1d3d0c491aa3c2c607bb7f6b33", "266316c0b16e4bf8abf7f8274e33deec", "d80bb55a259642d897e31bc038e1c396"
 ];
@@ -15,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function submitQNAForm() {
   const caption = localStorage.getItem("caption");
   const modelID = localStorage.getItem("modelID"); 
   const profilePicture="https://media.sketchfab.com/avatars/78fa317e46024a5283765aa34df5e508/17fa177ffaa344a2b2fc8e78efd40fbb.jpeg"
+
   //code test 
   console.log(`Model Name: ${modelQn}`);
   console.log(`Description: ${caption}`);
@@ -62,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function submitQNAForm() {
       ;}
 });
 
+//get relevant content for models to fill up the gallery
 function fetchModelDetails(modelIDEach) {
   const apiUrl = `${apiBaseUrl}${modelIDEach}`;
   const headers = {
@@ -79,7 +78,7 @@ function fetchModelDetails(modelIDEach) {
       // assigning variables
       const modelID=modelData.uid;
       const modelQn = modelData.name;
-      const profilePicture = modelData.user.avatar.images[1].url; // Assuming you want the first image in the avatar
+      const profilePicture = modelData.user.avatar.images[1].url; 
       const caption = modelData.description;
       const embeddedModel = modelData.embedUrl;
 

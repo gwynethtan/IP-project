@@ -1,8 +1,7 @@
 function joinChallenge (competitionPoint){
     event.preventDefault();
     var userPoints = parseInt(localStorage.getItem("userPoints"));
-    console.log(`${userPoints}`);
-    userPoints+= parseInt(competitionPoint);
+    userPoints+= parseInt(competitionPoint); //add points based on competition difficulty level 
     var borderColor =localStorage.getItem("borderColor");
 
     //adding additional points according to what border color they have
@@ -12,7 +11,7 @@ function joinChallenge (competitionPoint){
 
     //update local storage for points
     localStorage.setItem("userPoints", userPoints);
-    console.log(` ${userPoints}`);
+    console.log(`${userPoints}`);
 
     //redirect to sent page
     window.location.href = "sent.html";

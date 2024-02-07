@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
 
     // getting required variables for left side of post
@@ -29,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Get the current page URL
                 let currentPageUrl = window.location.href;
     
-                // Retrieve existing comments for the current page from local storage
+                // Retrieve existing comments for the current page from local storage based on the unique url
                 let pageComments = JSON.parse(localStorage.getItem('comments_' + currentPageUrl)) || [];
 
                 // Keep the new comments back in local storage
@@ -43,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// write content for the comments created by the users
 function updateComments(comments) {
     let commentsHTML = '';
     var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
@@ -76,7 +76,7 @@ function updateComments(comments) {
     document.getElementById("allUploadedComments").innerHTML = commentsHTML;
 }
 
-// Function to retrieve and display comments when the page loads
+// Function to retrieve and display comments when the page reloads
 function displayComments() {
     let currentPageUrl = window.location.href;
 
@@ -94,7 +94,8 @@ function isCode(modelID) {
     const codeRegex = /[\{\}\[\]\(\);,=+\-*\/%<>\&\|\^!~]/;
     return codeRegex.test(modelID);
   }
-  
+
+  // create the content for what the comments are going to discuss about
 function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption) {
     var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
     var borderColor =localStorage.getItem("borderColor");
@@ -156,7 +157,7 @@ function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption)
         </div>
         `
 
-        //insert html for right  side content from gallery page 
+        //insert html for the area where user can type in comments
         document.getElementById("comment").innerHTML=
             `
             <div class="commentImage">

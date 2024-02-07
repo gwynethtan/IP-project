@@ -1,23 +1,18 @@
-//localStorage.removeItem("userPoints");
+var userPointsElement = document.getElementById("userPoints");
+var userPoints = localStorage.getItem("userPoints"); // make userPoints accessible across all pages
 
-var userPointsElement = document.getElementById("userPoints"); //receiving original number put in  
-var userPoints = localStorage.getItem("userPoints"); //// make userPoints accessible across all pages
-
-if (!userPoints) {
+//set default user point as 7000
+if (!userPoints) { 
     userPoints = 7000;
 } else {
     userPoints = parseInt(userPoints);
 }
 
-
-
 console.log (`user : ${userPoints}`);
 
-//localStorage.setItem("userPoints", userPoints);
-
 localStorage.setItem("userPoints", userPoints);
-console.log (`local storage ${userPoints}`);
-userPointsElement.innerText = userPoints; //automatically update
+console.log (`local storage user points: ${userPoints}`);
+userPointsElement.innerText = userPoints; //automatically update points on screen
 
 
 var rewardProfile = document.getElementById("rewardProfile").querySelector('img');
@@ -53,11 +48,6 @@ function setBorderColor() {
 
 setBorderColor();
 
-
-//test 
-//var userPoints = localStorage.setItem("userPoints", originalPoints) && originalPoints;
-
-
 // for other vouchers that are not clicked on but cannot be redeemed by user anyways due to insufficient points
  function checkRedeemable(){
     var allRewardsCols = document.querySelectorAll('.rewardsCol');
@@ -84,7 +74,7 @@ function deductPoints(button) {
         userPoints -= pointsToDeduct;
         localStorage.setItem("userPoints", userPoints);
         console.log (`local storage ${userPoints}`);
-        userPointsElement.innerText = userPoints; //automatically update
+        userPointsElement.innerText = userPoints; //automatically update points on screen
 
         // for other vouchers that are not clicked on but cannot be redeemed by user anyways due to insufficient points
         checkRedeemable() ;
