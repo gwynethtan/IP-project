@@ -45,11 +45,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function updateComments(comments) {
     let commentsHTML = '';
-
-    //for profile picture design 
     var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
+    console.log(`${rewardProfileImageURL}`);
     var borderColor =localStorage.getItem("borderColor");
-    
+    console.log(`${borderColor}`);
+
     for (const comment of comments) {
         // HTML for each comment, updated with new inputs 
         commentsHTML += `
@@ -73,7 +73,7 @@ function updateComments(comments) {
     }
 
     // Update comment
-    document.getElementById("allComments").innerHTML = commentsHTML;
+    document.getElementById("allUploadedComments").innerHTML = commentsHTML;
 }
 
 // Function to retrieve and display comments when the page loads
@@ -189,6 +189,7 @@ function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption)
                 .then(modelData => {
                 const commentList=modelData.results;
                 console.log("list:", commentList);
+                let eachCommentHTML='';
 
                 for (const eachComment of commentList) {
                     const commenter=eachComment.user.username; 
@@ -211,7 +212,7 @@ function fetchModelDetails(modelID,embeddedModel,profilePicture,modelQn,caption)
                             <h1>${commenter}</h1>
                         </div>
                         <div class="areaProfileIcons" onclick="upvotePoints(this)">
-                            <img src="Pictures/Comment - Upvote Icon.png">
+                            <img src="../Pictures/Comment - Upvote Icon.png">
                             <h3 class="upvoteCount">0</h3>
                         </div>
                     </div>
@@ -240,4 +241,3 @@ function upvotePoints(button){
     var upvoteCount = 1;
     upvoteCountElement.innerText = upvoteCount;
 }
-

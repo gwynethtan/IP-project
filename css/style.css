@@ -109,6 +109,7 @@ body {
 }
 
 .navbackground img {
+    object-fit: cover;
     width:100%;
     height: 770px;
 }
@@ -125,6 +126,7 @@ body {
     font-size: 30px;
     padding-top: 230px;
     padding-left: 60px;
+    color:#2A456B
 }
 
 .logInUser {
