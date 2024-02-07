@@ -63,7 +63,7 @@ setBorderColor();
         var pointsRequired = parseInt(claimButton.getAttribute("data-points"));
         // change other vouchers' image and button color if cannot redeem
         if (userPoints < pointsRequired) {
-            voucherImage.src = "Pictures/5.png";
+            voucherImage.src = "../Pictures/5.png";
             claimButton.style.backgroundColor = "grey"; 
         }
 
