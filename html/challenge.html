@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="../css/normalize.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,34 +9,32 @@
     </head>
 
     <body>
-
         <!--Standard Navigation Bar-->
+        <header>
+            <div id="top">
+                <nav class="navtext">
+                    <a href="gallery.html" alt="Gallery page">Home</a>
+                    <a href="challenge.html" alt="Challenge page">Challenge</a>
+                    <a href="rewards.html" alt="Rewards page">Rewards</a>
+                </nav>
 
-        <div id="top">
-            <nav class="navtext">
-                <a href="gallery.html">Home</a>
-                <a href="challenge.html">Challenge</a>
-                <a href="rewards.html">Rewards</a>
-            </nav>
+                <div class="logo">
+                    <a href="gallery.html" alt="Logo which can be clicked on to gallery page"><img src="../Pictures/logo.png"></a>
+                </div>
 
-            <div class="logo">
-                <a href="gallery.html"><img src="../Pictures/logo.png"></a>
+                <div class="navicons">
+                    <a href="uploadqna.html" alt="Upload page"><img src="../Pictures/Nav%20Bar%20-%20Upload%20Icon.png"></a>
+                    <a href="contact.html" alt="Contact page"><img src="../Pictures/Nav%20Bar%20-%20Phone%20Icon.png"></a>
+                </div>
             </div>
-
-            <div class="navicons">
-                <a href="uploadqna.html"><img src="../Pictures/Nav%20Bar%20-%20Upload%20Icon.png"></a>
-                <a href="contact.html"><img src="../Pictures/Nav%20Bar%20-%20Phone%20Icon.png"></a>
-            </div>
-        </div>
+        </header>
 
         <div id="challengeList">
             <div class="challengePadding">
                 <!--Post 1-->
                 <div id="uploadedChallenges"></div>
                 <div class="challengeColumnOne">
-
                     <div class="leftFeed">
-            
                         <div class="leftFeedProfile">
                             <img src="../Pictures/Challenge%20-%20Green.png">
                             <h2>Hyundai NTU Printing Challenge</h2>
@@ -45,11 +43,8 @@
                         <div class="leftFeedImage">
                             <img src="../Pictures/6.png">
                         </div>      
-            
                     </div>
-            
                     <div class="rightFeed">
-            
                         <div class="rightFeedDetails">
                             <h1>Details:</h1>
                             <h2>The School of Mechanical and Aerospace Engineering (MAE), Nanyang Technological University 
@@ -57,89 +52,67 @@
                                 innovative use of the technology in automotive engineering. To find out more, please 
                                 visithttps://www.ntu.edu.sg/mae/alumni/events</h2>
                         </div>
-            
                         <div class="rightFeedSmallDetails">
                             <h3>Members Needed: 3/5</h3>
                             <h4>By 2024-07-10</h4>
                         </div>
-
                         <div class="challengePostBtn">
                             <form onsubmit="joinChallenge(50,this);return false;" style="display: flex; justify-content: center; width: auto;">
                                 <input class='challengePostBtn' type="submit" value="APPLY">
                             </form>
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <!--Post 2-->
             <div class="challengeColumnOne">
-
                 <div class="leftFeed">
-
                     <div class="leftFeedProfile">
                         <img src="../Pictures/Challenge%20-%20Orange.png">
                         <h2>SUTD 3D Printing Challenge</h2>
                     </div>
-
                     <div class="leftFeedImage">
                         <img src="../Pictures/7.png">
                     </div>      
-
                 </div>
-
                 <div class="rightFeed">
-
                     <div class="rightFeedDetails">
                         <h1>Details:</h1>
                         <h2>The Singapore University of Technology and Design (SUTD) is thrilled to introduce the SUTD 3D Printing Challenge—an exhilarating competition at the intersection of technology and design. In partnership with leading industry players and design luminaries, this challenge is set to ignite the spark of creativity among aspiring innovators and design enthusiasts.</h2>
                     </div>
-
                     <div class="rightFeedSmallDetails">
                         <h3>Members Needed: 2/5</h3>
                         <h4>By 2024-12-29</h4>
                     </div>
-
                     <div class="challengePostBtn">
                         <form onsubmit="joinChallenge(60,this) ;return false;" style="display: flex; justify-content: center; width: auto;">
                             <input class='challengePostBtn' type="submit" value="APPLY">
                         </form>
                     </div>
-
                 </div>
             </div>
 
             <!--Post 3-->
             <div class="challengeColumnOne">
-
                 <div class="leftFeed">
-
                     <div class="leftFeedProfile">
                         <img src="../Pictures/Challenge%20-%20Red.png">
                         <h2>ASIG SLA Localise Challenge</h2>
                     </div>
-
                     <div class="leftFeedImage">
                         <img src="../Pictures/8.png">
                     </div>      
-
                 </div>
-
                 <div class="rightFeed">
-
                     <div class="rightFeedDetails">
                         <h1>Details:</h1>
-                        <h2>
-                            The School of Technologies and Futuristic Engineering (STFE), in collaboration with Galactic Innovation Dynamics (GID), is thrilled to unveil the ASIG SLA Localise Challenge—an unprecedented 3D printing competition designed to revolutionize the landscape of space-age engineering.</h2>
-                            
+                        <h2>The School of Technologies and Futuristic Engineering (STFE), in collaboration with Galactic Innovation Dynamics (GID), is thrilled to unveil the ASIG SLA Localise Challenge—an unprecedented 3D printing competition designed to revolutionize the landscape of space-age engineering.</h2>
                     </div>
-
                     <div class="rightFeedSmallDetails">
                         <h3>Members Needed: 1/5</h3>
                         <h4>By 2024-05-22</h4>
                     </div>
-
                     <div class="challengePostBtn">
                         <form onsubmit="return joinChallenge(70,this);return false;" style="display: flex; justify-content: center; width: auto;">
                             <input class='challengePostBtn' type="submit" value="APPLY">

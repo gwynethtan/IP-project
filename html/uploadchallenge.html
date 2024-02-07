@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en"> 
     <head>
         <link rel="stylesheet" href="../css/normalize.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,26 +9,27 @@
     </head>
 
     <body>
-
         <!--Standard Navigation Bar-->
+        <header>
+            <div id="top">
+                <nav class="navtext">
+                    <a href="gallery.html" alt="Gallery page">Home</a>
+                    <a href="challenge.html" alt="Challenge page">Challenge</a>
+                    <a href="rewards.html" alt="Rewards page">Rewards</a>
+                </nav>
 
-        <div id="top">
-            <nav class="navtext">
-                <a href="gallery.html">Home</a>
-                <a href="challenge.html">Challenge</a>
-                <a href="rewards.html">Rewards</a>
-            </nav>
+                <div class="logo">
+                    <a href="gallery.html" alt="Logo which can be clicked on to gallery page"><img src="../Pictures/logo.png"></a>
+                </div>
 
-            <div class="logo">
-                <a href="gallery.html"><img src="../Pictures/logo.png"></a>
+                <div class="navicons">
+                    <a href="uploadqna.html" alt="Upload page"><img src="../Pictures/Nav%20Bar%20-%20Upload%20Icon.png"></a>
+                    <a href="contact.html" alt="Contact page"><img src="../Pictures/Nav%20Bar%20-%20Phone%20Icon.png"></a>
+                </div>
             </div>
+        </header>
 
-            <div class="navicons">
-                <a href="uploadqna.html"><img src="../Pictures/Nav%20Bar%20-%20Upload%20Icon.png"></a>
-                <a href="contact.html"><img src="../Pictures/Nav%20Bar%20-%20Phone%20Icon.png"></a>
-            </div>
-        </div>
-
+        <!--form-->
         <div id="uploadPageChallenge">
             <div class="headingChallenge">
                 <h2>Posted to</h2>
@@ -85,15 +86,15 @@
                         <option value="advance">Advance</option>
                     </select><br>
                 </div>    
-
             </div>
-
             <div class="uploadPostBtn">
                 <form onsubmit="submitChallengeForm(event)" style="display: flex; justify-content: center; width: auto;">
                     <input class='postBtn' type="submit" value="POST">
                 </form>
             </div>
         </div>
+
+        <!--Get data from the form and store it in local storage to post content-->
         <script>
             function submitChallengeForm(challengeUpload) {
                 challengeUpload.preventDefault();

@@ -142,11 +142,11 @@ function toggleLike(span) {
   console.log("toggle working");
 
   if (likeCheck === 0) {
-    span.querySelector('img').src = "Pictures/Home - Heart Colour Icon.png";
+    span.querySelector('img').src = "../Pictures/Home - Heart Colour Icon.png";
     likeCheck += 1;
     console.log("liked");
   } else {
-    span.querySelector('img').src = "Pictures/Home - Heart Icon.png";
+    span.querySelector('img').src = "../Pictures/Home - Heart Icon.png";
     likeCheck -= 1;
     console.log("unliked");
   }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="../css/normalize.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,45 +9,40 @@
     </head>
 
     <body>
-
         <!--Standard Navigation Bar-->
-        <div id="top">
-            <nav class="navtext">
-                <a href="gallery.html">Home</a>
-                <a href="challenge.html">Challenge</a>
-                <a href="rewards.html">Rewards</a>
-            </nav>
+        <header>
+            <div id="top">
+                <nav class="navtext">
+                    <a href="gallery.html" alt="Gallery page">Home</a>
+                    <a href="challenge.html" alt="Challenge page">Challenge</a>
+                    <a href="rewards.html" alt="Rewards page">Rewards</a>
+                </nav>
 
-            <div id="rewardProfile">
-                <a href="gallery.html"><img src="../Pictures/Home%20-%20Profile%20Pic.png"></a>
+                <div id="rewardProfile">
+                    <a href="gallery.html" alt="Logo which can be clicked on to gallery page"><img src="../Pictures/Home%20-%20Profile%20Pic.png"></a>
+                </div>
+
+                <div class="navicons">
+                    <a href="uploadqna.html" alt="Upload page"><img src="../Pictures/Nav%20Bar%20-%20Upload%20Icon.png"></a>
+                    <a href="contact.html" alt="Contact page"><img src="../Pictures/Nav%20Bar%20-%20Phone%20Icon.png"></a>
+                </div>
             </div>
-
-            <div class="navicons">
-                <a href="uploadqna.html"><img src="../Pictures/Nav%20Bar%20-%20Upload%20Icon.png"></a>
-                <a href="contact.html"><img src="../Pictures/Nav%20Bar%20-%20Phone%20Icon.png"></a>
-            </div>
-        </div>
-
+        </header>
         <!--Points Section-->
-
         <div class="point">
             <div class="pointSection">
                 <h1 id="userPoints"></h1>
             </div>
         </div>
 
-
         <div class="rewardsFeed">
-
             <!--Points Row 1-->
             <div class="rewardsPadding">
-
                 <div class="rewards">
                     <!--Price One-->    
                     <div class="rewardsCol">
                         <h1>$5 Grab Voucher - 300pts</h1>
                         <img src="../Pictures/5%20Challenge.png">
-                        
                         <div class="colBtn">
                             <input data-points="300" class='colBtn1' type="submit" value="CLAIM" style="font-weight: 700;" onclick="deductPoints(this)">
                         </div>
@@ -77,7 +72,6 @@
 
             <!--Points Row 2-->
             <div class="rewards">
-
                 <!--Price One-->    
                 <div class="rewardsCol">
                     <h1>$10 NTUC Voucher - 3000pts</h1>
@@ -87,7 +81,6 @@
                         <input class='colBtn1_2' type="submit" value="OUT OF STOCK" style="font-weight: 700;">
                     </div>
                 </div>
-
                 <!--Price Two-->
                 <div class="rewardsCol">
                     <h1>$10 McDonald Voucher - 3000pts</h1>
@@ -97,7 +90,6 @@
                         <input class='colBtn1_2' type="submit" value="OUT OF STOCK" style="font-weight: 700;">
                     </div>
                 </div>
-
                 <!--Price Three-->
                 <div class="rewardsCol">
                     <h1>$10 Nike Voucher - 3000pts</h1>
@@ -107,12 +99,10 @@
                         <input class='colBtn1_2' type="submit" value="OUT OF STOCK" style="font-weight: 700;">
                     </div>
                 </div>
-
             </div>
             
             <!--Points Row 3-->
             <div class="rewards">
-
                 <!--Price One-->    
                 <div class="rewardsCol">
                     <h1>$15 Capitaland Voucher - 5000pts</h1>
@@ -122,7 +112,6 @@
                         <input class='colBtn1_2' type="submit" value="OUT OF STOCK" style="font-weight: 700;">
                     </div>
                 </div>
-
                 <!--Price Two-->
                 <div class="rewardsCol">
                     <h1>$15 Grab Voucher - 3000pts</h1>
@@ -132,7 +121,6 @@
                         <input class='colBtn1_2' type="submit" value="OUT OF STOCK" style="font-weight: 700;">
                     </div>
                 </div>
-
                 <!--Price Three-->
                 <div class="rewardsCol">
                     <h1>$15 MacDonald Voucher - 5000pts</h1>
@@ -142,9 +130,7 @@
                         <input class='colBtn1_2' type="submit" value="OUT OF STOCK" style="font-weight: 700;">
                     </div>
                 </div>
-
             </div>
-
         </div>
         <script defer src="../js/points.js"></script>
     </body>

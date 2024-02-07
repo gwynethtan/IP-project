@@ -1,65 +1,64 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
 
-<head>
-    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
+    <body>
+        <!--Standard Navigation Bar-->
+        <header>
+            <div id="top">
+                <nav class="navtext">
+                    <a href="html/gallery.html" alt="Gallery page">Home</a>
+                    <a href="html/challenge.html" alt="Challenge page">Challenge</a>
+                    <a href="html/rewards.html" alt="Rewards page">Rewards</a>
+                </nav>
 
-<body>
+                <div class="logo">
+                    <a href="html/gallery.html" alt="Logo which can be clicked on to gallery page"><img src="Pictures/logo.png"></a>
+                </div>
 
-    <!--Standard Navigation Bar-->
-
-    <div id="top">
-        <nav class="navtext">
-            <a href="html/gallery.html">Home</a>
-            <a href="html/challenge.html">Challenge</a>
-            <a href="html/rewards.html">Rewards</a>
-        </nav>
-
-        <div class="logo">
-            <a href="html/gallery.html"><img src="Pictures/logo.png"></a>
-        </div>
-
-        <div class="navicons">
-            <a href="html/uploadqna.html"><img src="Pictures/Nav Bar - Upload Icon.png"></a>
-            <a href="html/contact.html"><img src="Pictures/Nav Bar - Phone Icon.png"></a>
-        </div>
-    </div>
-
-    <!--Homepage Welcome Introduction-->
-
-    <div id="middle">
-        <div class="navbackground">
-            <img src="Pictures/LogIn - Wallpaper.png">
-        </div>
-
-    <!--Start of LogIn Form-->
-
-        <div class="loginText">
-            <div class="logInFormText">
-                <h1>Welcome!</h1>
+                <div class="navicons">
+                    <a href="html/uploadqna.html" alt="Upload page"><img src="Pictures/Nav Bar - Upload Icon.png"></a>
+                    <a href="html/contact.html"><img src="Pictures/Nav Bar - Phone Icon.png"></a>
+                </div>
             </div>
-        
-            <div class="logInUser" action="index.html" style="width: 100%;">
-                <label for="username">Username:</label><br>
-                <input type="text" id="username" name="username"><br>
+        </header>
+
+        <!--Homepage Welcome Introduction-->
+
+        <div id="middle">
+            <div class="navbackground">
+                <img src="Pictures/LogIn - Wallpaper.png">
             </div>
 
-            <div class="logInPass" action="index.html" style="width: 100%;">
-                <label for="pwd">Password:</label><br>
-                <input type="password" id="pwd" name="pwd"><br><br>   
-            </div>
+        <!--Start of LogIn Form-->
 
-            <div class="LogInBtn">
-                <form action="html/gallery.html">
-                    <input class='LogInFormBtn' type="submit" value="LOG IN">
-                </form>
+            <div class="loginText">
+                <div class="logInFormText">
+                    <h1>Welcome!</h1>
+                </div>
+            
+                <div class="logInUser" action="index.html" style="width: 100%;">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                </div>
+
+                <div class="logInPass" action="index.html" style="width: 100%;">
+                    <label for="pwd">Password:</label><br>
+                    <input type="password" id="pwd" name="pwd"><br><br>   
+                </div>
+
+                <div class="LogInBtn">
+                    <form action="html/gallery.html">
+                        <input class='LogInFormBtn' type="submit" value="LOG IN">
+                    </form>
+                </div>
             </div>
         </div>
-
-    </div>
-
-</body>
+    </body>
+</html>

@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 
-<head>
-    <link rel="stylesheet" href="../css/normalize.css" type="text/css">    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-</head>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/normalize.css" type="text/css">    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    </head>
 
-<body class="postedBG">
+    <body class="postedBG">
+        <!--Standard Navigation Bar-->
+        <header>
+            <div id="top">
+                <nav class="navtext">
+                    <a href="gallery.html" alt="Gallery page">Home</a>
+                    <a href="challenge.html" alt="Challenge page">Challenge</a>
+                    <a href="rewards.html" alt="Rewards page">Rewards</a>
+                </nav>
+                <div class="logo">
+                    <a href="gallery.html" alt="Logo which can be clicked on to gallery page"><img src="../Pictures/logo.png"></a>
+                </div>
+                <div class="navicons">
+                    <a href="uploadqna.html" alt="Upload page"><img src="../Pictures/Nav%20Bar%20-%20Upload%20Icon.png"></a>
+                    <a href="contact.html" alt="Contact page"><img src="../Pictures/Nav%20Bar%20-%20Phone%20Icon.png"></a>
+                </div>
+            </div>
+        </header>
 
-    <!--Standard Navigation Bar-->
-
-    <div id="top">
-        <nav class="navtext">
-            <a href="gallery.html">Home</a>
-            <a href="challenge.html">Challenge</a>
-            <a href="rewards.html">Rewards</a>
-        </nav>
-
-        <div class="logo">
-            <a href="gallery.html"><img src="../Pictures/logo.png"></a>
+        <!--Joined page content-->
+        <div class="joined">
+            <div class="joinedLottie">
+                <dotlottie-player src="https://lottie.host/ed9a1b94-105b-486c-ac51-2bc6b139671a/PTIbuSeGAZ.json" background="transparent" speed="2" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
+            </div>
+            <div class="joinedMain">
+                <h1>DONE!</h1>
+            </div>
+            <div class="joinedBody">
+                <h3>Post created !</h3>
+            </div>
+            <div class="joinedBtn">
+                <a href="gallery.html">
+                    <input class='joinedBtn1' type="submit" value="Done">
+                </a>
+            </div>
         </div>
-
-        <div class="navicons">
-            <a href="uploadqna.html"><img src="../Pictures/Nav%20Bar%20-%20Upload%20Icon.png"></a>
-            <a href="contact.html"><img src="../Pictures/Nav%20Bar%20-%20Phone%20Icon.png"></a>
-        </div>
-    </div>
-
-    <div class="joined">
-        <div class="joinedLottie">
-            <dotlottie-player src="https://lottie.host/ed9a1b94-105b-486c-ac51-2bc6b139671a/PTIbuSeGAZ.json" background="transparent" speed="2" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
-        </div>
-
-        <div class="joinedMain">
-            <h1>DONE!</h1>
-        </div>
-
-        <div class="joinedBody">
-            <h3>Post created !</h3>
-        </div>
-
-        <div class="joinedBtn">
-            <a href="gallery.html">
-                <input class='joinedBtn1' type="submit" value="Done">
-            </a>
-        </div>
-
-    </div>
-
-</body>
+    </body>
+</html>
 
