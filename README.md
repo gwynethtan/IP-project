@@ -147,6 +147,7 @@ The project looks about the same across all different browsers and screen sizes 
  
 ### Media
 - The photos used in this site were obtained from ...
+-Close-up of an old black and white soccer ball isolated on a transparent background. Photography, png. Stock Photo. (n.d.). Adobe Stock. https://stock.adobe.com/sg/images/close-up-of-an-old-black-and-white-soccer-ball-isolated-on-a-transparent-background-photography-png/534131506?prev_url=detail&asset_id=534131506
  
 ### Acknowledgements
  

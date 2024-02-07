@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let imageLink;
     switch (challenge.level) {
         case "easy":
-            imageLink = "Pictures/Challenge - Green.png"
+            imageLink = "../Pictures/Challenge - Green.png"
             break;
         case "intermediate":
-            imageLink = "Pictures/Challenge - Orange.png"
+            imageLink = "../Pictures/Challenge - Orange.png"
             break;
         case "advance":
-            imageLink = "Pictures/Challenge - Red.png"
+            imageLink = "../Pictures/Challenge - Red.png"
             break;
     };
 

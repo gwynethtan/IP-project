@@ -9,12 +9,16 @@ if (!userPoints) {
     userPoints = parseInt(userPoints);
 }
 
-//localStorage.removeItem("userPoints");
+
 
 console.log (`user : ${userPoints}`);
 
-//update points shown in screen 
-userPointsElement.innerText = userPoints; 
+//localStorage.setItem("userPoints", userPoints);
+
+localStorage.setItem("userPoints", userPoints);
+console.log (`local storage ${userPoints}`);
+userPointsElement.innerText = userPoints; //automatically update
+
 
 var rewardProfile = document.getElementById("rewardProfile").querySelector('img');
 var rewardProfileImage = rewardProfile.src;
