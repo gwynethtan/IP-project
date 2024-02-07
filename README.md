@@ -29,6 +29,26 @@ User stories
 
 https://www.figma.com/file/6ocN4g1ZqIweOciGRhsZcG/Untitled?type=design&node-id=0-1&mode=design&t=5ui6SeMwQnihTaLW-0
 
+## User Design Rationale
+
+Primary Colors: Blue and Yellow
+> Representing the main colors of NgeeAnn
+> Associating RoleModels using yellow and blue will help establish our brand as part of NgeeAnn and further familiarise users as they use it bit by bit.
+
+Obejective: Minimalistic Design promoting clarity and focus
+
+1. Continuos Scrolling Experience
+> The continuous scrolling feature in the feed allow users to browse through effortlessly, broadening their search and learning withtin the 3D space. 
+
+2. Rounded boxes
+> Rounded boxes impart a softer and more elegant aesthetic comapred to sharp corners. This design is implemented as it is pleasing to the eyes, making the overall appearance more friendly. Rounded boxes were used extensively including input boxes, navigation and contact information.
+
+3. Icons in strokes
+> Stroked icons convey simplicity due to its lightweight appearance, a perfect fit for our theme. Their transparent nature allow itself to adapt to various backgrounds wihtout clashing the surrounding elements. Stroked icons are used for our navigation bar, main feed (comment and like button) and lottie animation.
+
+4. Using blue as the background instead of yellow
+> Using a darker shade like blue instead of yellow provides high contrast and improves legibility. It helps emphasis the visuals and text we are trying to convey. This can be seen in our "Joined" and "Sent" page.
+
 ## Features
  
 ### Existing Features
