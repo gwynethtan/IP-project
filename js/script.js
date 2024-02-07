@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function submitQNAForm() {
             </div>
       
             <div class="postIcons">
-              <span class="likeAction" likeCheck="0" onclick="toggleLike(this)"><img src="Pictures/Home - Heart Icon.png"></span>
+              <span class="likeAction" likeCheck="0" onclick="toggleLike(this)"><img src="../Pictures/Home - Heart Icon.png"></span>
               <a href="comment.html??modelID=${encodeURIComponent(modelID)}&embeddedModel=${encodeURIComponent(modelID)}&profilePicture=${encodeURIComponent(profilePicture)}&modelQn=${encodeURIComponent(modelQn)}&caption=${encodeURIComponent(caption)}">
-                <img src="Pictures/Home - Comment Icon.png" />
+                <img src="../Pictures/Home - Comment Icon.png" />
               </a>
             </div>
       
