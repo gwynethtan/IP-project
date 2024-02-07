@@ -1,14 +1,10 @@
-// make userPoints accessible across all pages
+//localStorage.removeItem("userPoints");
 
-// Your code, including the joinChallenge function
 var userPointsElement = document.getElementById("userPoints"); //receiving original number put in  
 
-var userPoints = parseInt(localStorage.getItem("userPoints")) || 700; //reset to 700 if its 0
+var userPoints = parseInt(localStorage.getItem("userPoints")); //// make userPoints accessible across all pages
 //localStorage.removeItem("userPoints");
-//set the localStorage 
 
-//border color test
-//var userPoints = 7000; //reset to 700 if its 0
 
 console.log (`user : ${userPoints}`);
 
