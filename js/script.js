@@ -108,9 +108,9 @@ function fetchModelDetails(modelIDEach) {
           </div>
     
           <div class="postIcons">
-            <span class="likeAction" likeCheck="0" onclick="toggleLike(this)"><img src="Pictures/Home - Heart Icon.png"></span>
+            <span class="likeAction" likeCheck="0" onclick="toggleLike(this)"><img src="../Pictures/Home - Heart Icon.png"></span>
             <a href="comment.html??modelID=${modelID}&embeddedModel=${embeddedModel}&profilePicture=${encodeURIComponent(profilePicture)}&modelQn=${encodeURIComponent(modelQn)}&caption=${encodeURIComponent(caption)}">
-              <img src="Pictures/Home - Comment Icon.png" />
+              <img src="../Pictures/Home - Comment Icon.png" />
             </a>
           </div>
     
