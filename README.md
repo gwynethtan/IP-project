@@ -15,17 +15,17 @@ This website is for Immersive Media Ngee Ann polytechnic students. They want to 
 This app is the best way to achieve that as students can post 3d modelling, join competitions and redeem vouchers according to the points they have earned
 
 User stories
--As a student struggling in 3D modelling, I want to post questions and flawed 3D models so that people can find solutions to my problems 
+- As a student struggling in 3D modelling, I want to post questions and flawed 3D models so that people can find solutions to my problems 
 
--As a student who wants to improve, I want to post models so that people can give feedback on it 
+- As a student who wants to improve, I want to post models so that people can give feedback on it 
 
--As a student who enjoys vouchers, I want the app to give me opportunity to claim vouchers so that I can get vouchers 
+- As a student who enjoys vouchers, I want the app to give me opportunity to claim vouchers so that I can get vouchers 
 
--As a student who has a competitve nature, i want the app to have a point and reward system so that I can get acknowledged for my hard work 
+- As a student who has a competitve nature, i want the app to have a point and reward system so that I can get acknowledged for my hard work 
 
--As a student who wants to challenge their thinking, I want the app to have competition gallery so that I can see what competitions to join. 
+- As a student who wants to challenge their thinking, I want the app to have competition gallery so that I can see what competitions to join. 
 
--As a student who has complains for this app, i want the app to have a contact form so that I can communicate to the company on what I can improve on 
+- As a student who has complains for this app, i want the app to have a contact form so that I can communicate to the company on what I can improve on 
 
 https://www.figma.com/file/6ocN4g1ZqIweOciGRhsZcG/Untitled?type=design&node-id=0-1&mode=design&t=5ui6SeMwQnihTaLW-0
 
