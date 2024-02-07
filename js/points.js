@@ -1,10 +1,15 @@
 //localStorage.removeItem("userPoints");
 
 var userPointsElement = document.getElementById("userPoints"); //receiving original number put in  
+var userPoints = localStorage.getItem("userPoints"); //// make userPoints accessible across all pages
 
-var userPoints = parseInt(localStorage.getItem("userPoints")); //// make userPoints accessible across all pages
+if (!userPoints) {
+    userPoints = 7000;
+} else {
+    userPoints = parseInt(userPoints);
+}
+
 //localStorage.removeItem("userPoints");
-
 
 console.log (`user : ${userPoints}`);
 
