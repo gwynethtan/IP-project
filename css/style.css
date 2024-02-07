@@ -76,7 +76,7 @@ body {
     border-radius: 50%;
 }
 
-/* icons */
+/*navigation icons */
 .navicons {
     display: flex;
     justify-content: space-between;
@@ -96,7 +96,7 @@ body {
     height: auto;
 }
 
-/* Welcome Introduction */
+/* Welcome Introduction for login*/
 #middle {
     display: flex;
     flex-direction: row;
@@ -132,13 +132,11 @@ body {
 .logInUser {
     padding-top: 30px;
     padding-left: 60px;
-    margin: none; 
 }
 
 .logInPass {
     padding-top: 30px;
     padding-left: 60px;
-    margin: none; 
 }
 
 /* label is the text for 'username', 'password' */
@@ -453,7 +451,6 @@ label {
     font-size: 20px;
     color: #2A456B;
     font-weight: 600;
-    margin: none;
     padding-bottom: 10px;
 }
 
@@ -510,10 +507,9 @@ label {
     padding-left: 8px;
 }
 
-/* Comment Texts */
+/* Comment input area */
 .areaDetails {
     width: 90%;
-    margin: none;
     padding-right: 20px;
     padding-top: 10px;
 }
@@ -707,7 +703,7 @@ label {
     padding-top: 100px;
 }
 
-/* Players 2 button */
+/* 2 type of upload button */
 .members {
     display: flex;
     flex-direction: row;
@@ -863,7 +859,6 @@ label {
     font-weight: 200;
     resize:none;
 }
-
 
 .membersInvolved input {
     padding-left: 12px;
@@ -1195,7 +1190,6 @@ input[type="submit"] {
 }
 
 .rightFeedSmallDetails h3 {
-    margin: none;
     font-size: 14px;
     font-weight: 500;
 }
@@ -1332,7 +1326,7 @@ input[type="submit"] {
     padding-left: 10px;
 }
 
-/* Form */
+/* contact form */
 .contactQuestion {
     display: flex;
     flex-direction: row;
