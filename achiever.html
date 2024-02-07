@@ -107,20 +107,29 @@
                 const challengeDate = document.getElementById('challengeDate').value;
                 const level = document.getElementById('level').value;
 
-                // Save content to localStorage
-                localStorage.setItem('challengeTitle',challengeTitle);
-                localStorage.setItem('challengeLink',challengeLink);
-                localStorage.setItem('challengeCaption',challengeCaption)
-                localStorage.setItem('membersTotal', membersTotal);
-                localStorage.setItem('membersInvolved', membersInvolved);
-                localStorage.setItem('challengeDate', challengeDate);
-                localStorage.setItem('level', level);
+                // store data in an object 
+                const challenge = {
+                    challengeTitle: challengeTitle,
+                    challengeLink: challengeLink,
+                    challengeCaption: challengeCaption,
+                    membersTotal: membersTotal,
+                    membersInvolved: membersInvolved,
+                    challengeDate: challengeDate,
+                    level: level
+                }
+
+                let challLst = localStorage.getItem("challenges");// Save content to localStorage
+                if (!challLst) {
+                    challLst = [challenge];
+                } else {
+                    challLst = JSON.parse(challLst);
+                    challLst.push(challenge); //append new data 
+                }
+                localStorage.setItem("challenges", JSON.stringify(challLst))
 
                 //redirect to challenge page 
                 window.location.href = "challenge.html"; 
-
             }
-
 
         </script>
     </body>
