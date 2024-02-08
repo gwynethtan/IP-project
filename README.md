@@ -16,17 +16,29 @@ This website is for Immersive Media Ngee Ann polytechnic students. They want to 
 This app is the best way to achieve that as students can post 3d modelling, join competitions and redeem vouchers according to the points they have earned
  
 User stories
-- As a student struggling in 3D modelling, I want to post questions and flawed 3D models so that people can find solutions to my problems
- 
-- As a student who wants to improve, I want to post models so that people can give feedback on it
- 
-- As a student who enjoys vouchers, I want the app to give me opportunity to claim vouchers so that I can get vouchers
- 
+
+- As a student weak in 3D modelling, I want the app to be easy to use so that my problems can be solved quickly
+
+- As a visual learner, I want the app design to be formatted well so that I am more motivated to use the app and learn
+
+- As a student who love helping others, I want the app to have the opportunity to help answer other questions so that I can fufil myself
+
+- As a student who enjoys good deals, I want the app to give me opportunity to claim vouchers so that I can feel satisfied 
+
 - As a student who has a competitive nature, i want the app to have a point and reward system so that I can get acknowledged for my hard work
- 
-- As a student who wants to challenge their thinking, I want the app to have competition gallery so that I can see what competitions to join.
- 
-- As a student who has complains for this app, i want the app to have a contact form so that I can communicate to the company on what I can improve on
+
+- As a sociable student, I want a platform where I can interact with people so that I can make friends
+
+- As an ambitious student, I want to be given varying level of challenges so that I can improve my knowledge
+
+- As a student who has complains for this app, i want the app to have a contact form so that I can communicate to the company on what can improve on
+
+- As a student who enjoys challenges, I want the app to have competition gallery so that I can see what competitions to join.
+
+- As a shy student facing problems, I want the app to allow me to look through others' problems so that I do not need to communicate online
+
+- As a teacher,I want the app design to reflect Ngee Ann's brand so that the institution's values are communicated effectively.
+
  
 https://www.figma.com/file/6ocN4g1ZqIweOciGRhsZcG/Untitled?type=design&node-id=0-1&mode=design&t=5ui6SeMwQnihTaLW-0
  
