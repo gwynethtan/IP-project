@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Check whether data successfully in restDB
         fetch("https://ipproject-d38f.restdb.io/rest/contact", settings)
+            //inform problem with network
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -45,9 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(data => {
                 console.log(data);
                 document.getElementById("contactBtn").disabled = false;
-                // Inform user it is a 
+                // Inform user it is a sucess
                 window.location.href = "sent.html";
             })
+            //inform problem with input
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
                 alert("There was an error processing your request. Please try again later or check if input in the valid data.");
