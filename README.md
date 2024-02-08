@@ -146,8 +146,28 @@ The project looks about the same across all different browsers and screen sizes 
 - No text content copied
  
 ### Media
-- The photos used in this site were obtained from ...
--Close-up of an old black and white soccer ball isolated on a transparent background. Photography, png. Stock Photo. (n.d.). Adobe Stock. https://stock.adobe.com/sg/images/close-up-of-an-old-black-and-white-soccer-ball-isolated-on-a-transparent-background-photography-png/534131506?prev_url=detail&asset_id=534131506
+The photos used in this site were obtained from ...
+- Close-up of an old black and white soccer ball isolated on a transparent background. Photography, png. Stock Photo. (n.d.). Adobe Stock. https://stock.adobe.com/sg/images/close-up-of-an-old-black-and-white-soccer-ball-isolated-on-a-transparent-background-photography-png/534131506?prev_url=detail&asset_id=534131506
+
+- Login page of NgeeAnn student Image: Log in or sign up to view. (n.d.). https://www.facebook.com/photo/?fbid=771524928344132&set=a.635933798569913
+
+- Nike voucher Image: Redirect notice. (n.d.). https://www.google.com/url?sa=i&url=https%3A%2F%2Fcardtonic.com%2Fread%2F3-things-you-can-do-with-a-nike-gift-card&psig=AOvVaw0GTRmIS9qT8Sil0UXK66s6&ust=1707417822602000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCJDfop32mYQDFQAAAAAdAAAAABAE
+
+- Grab voucher Image: Redirect notice. (n.d.-b). https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wogi.sg%2Fbuy-gift-cards%2Fgrabgifts-sg&psig=AOvVaw0YykwVuzpViDHkkF0bIWi-&ust=1707417839293000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCODfp532mYQDFQAAAAAdAAAAABAE
+
+- Capitaland voucher image: Redirect notice. (n.d.-c). https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.capitastar.com%2Fsg%2Fen%2Fcapitavoucher%2Fabout-ecapitavoucher.html&psig=AOvVaw1b4I5feqLuG7yD6sZx2sOh&ust=1707417893761000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMjVqp72mYQDFQAAAAAdAAAAABAE
+
+- Mcdonalds voucher Image: Redirect notice. (n.d.-d). https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mcdonalds.com.sg%2Fgift-certificates&psig=AOvVaw3VF49mp2UcVaDtlwJ4NTHm&ust=1707417909243000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLD6x5_2mYQDFQAAAAAdAAAAABAE
+
+- NTUC voucher image: Redirect notice. (n.d.-e). https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiftano.com%2Fgift%2Fntuc-fairprice-gift-vouchers-and-cards-online-singapore%2Fntuc-s50-voucher%2F&psig=AOvVaw0LIxOSsUDut6tWB9CyIhn2&ust=1707417961173000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMi_ve3cmoQDFQAAAAAdAAAAABAE
+
+- HYUNDAI – NTU 3D Printing Challenge 2022 for EV IONIQ 5 Image: HYUNDAI – NTU 3D Printing Challenge 2022 for EV IONIQ 5 - DesignSingapore Council. (n.d.). DesignSingapore Council. https://designsingapore.org/events/hyundai-ntu-3d-printing-challenge-2022-for-ev-ioniq-5/
+
+- SUTD 3D printing Design Image: Webmaster, P. (2022, July 22). SUTD 3D Printing and Design Innovation Challenge 2022 - Engineering Product Development (EPD). Engineering Product Development (EPD). https://epd.sutd.edu.sg/news-events/event/competition/sutd-3d-printing-and-design-innovation-challenge-2022/
+
+- 3D Digital Game Art Challenge: 3D Digital Game Art. (n.d.). Worldskills SG. https://www.worldskills.sg/skills/skill-areas/3d-digital-game-art
+
+- AISG-SLA Visual Localisation Challenge: Halim. (2023, October 27). AISG-SLA Visual Localisation Challenge - AI Singapore. AI Singapore. https://aisingapore.org/technology/prize-based-challenges/aisg-sla-visual-localisation-challenge/
  
 ### Acknowledgements
  
