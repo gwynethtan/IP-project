@@ -159,7 +159,6 @@ The project looks about the same across all different browsers and screen sizes 
  
 ### Media
 The photos used in this site were obtained from ...
-- Close-up of an old black and white soccer ball isolated on a transparent background. Photography, png. Stock Photo. (n.d.). Adobe Stock. https://stock.adobe.com/sg/images/close-up-of-an-old-black-and-white-soccer-ball-isolated-on-a-transparent-background-photography-png/534131506?prev_url=detail&asset_id=534131506
 
 - Login page of NgeeAnn student Image: Log in or sign up to view. (n.d.). https://www.facebook.com/photo/?fbid=771524928344132&set=a.635933798569913
 
@@ -180,6 +179,8 @@ The photos used in this site were obtained from ...
 - 3D Digital Game Art Challenge: 3D Digital Game Art. (n.d.). Worldskills SG. https://www.worldskills.sg/skills/skill-areas/3d-digital-game-art
 
 - AISG-SLA Visual Localisation Challenge: Halim. (2023, October 27). AISG-SLA Visual Localisation Challenge - AI Singapore. AI Singapore. https://aisingapore.org/technology/prize-based-challenges/aisg-sla-visual-localisation-challenge/
+
+- User profile photo done by Gwyneth
  
 ### Acknowledgements
  
