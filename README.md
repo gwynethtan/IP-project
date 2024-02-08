@@ -1,7 +1,9 @@
 # Role Models
  
 This is for our IP project
- 
+
+Here is where you can view the project: https://gwynethtan.github.io/RoleModels/
+
 In Ngee Ann polytechnic, there are students have been struggling 3D modelling or students who are passionate in it. For students who have been struggling in 3D modelling, it is not easy for them to search for solutions online specific to their project. Although they ask their 3D modelling teacher questions, teachers can get busy and is unable to answer their question promptly. For students who are passionate in it, there aren’t much suitable opportunities for them to expand their knowledge in it or may be unable to form a group with sufficient members to join a competition. That is why a platform that can cater to both students’ needs is required to guide them.
  
 Role Models is a platform where students can upload their 3d models to ask questions on how to improve it. Students can comment solutions and gain upvotes to win points. Students can join competitions. The points earned can be used to redeem vouchers.
@@ -76,9 +78,6 @@ Objective: Minimalistic Design promoting clarity and focus
  
 - Feature 13-allow administrator to see responses from contact form by viewing data in restDB
  
-### Features Left to Implement
-- allow users to post more than once
- 
 ## Technologies Used
  
 1. Languages used 
@@ -92,6 +91,8 @@ Objective: Minimalistic Design promoting clarity and focus
  
     - [RestDB] (https://restdb.io/)
         - used to store people's input for contact page
+
+Users will not be notified about Sketchfab API calls that fail to execute or return data as sketchfab API used here is to populate the gallery.
  
 ## Testing
 1. Login form:
@@ -139,7 +140,6 @@ Objective: Minimalistic Design promoting clarity and focus
     2. Try to submit the form with all inputs valid and verify that it is stored in restDB
  
 The project looks about the same across all different browsers and screen sizes and the functions are all the same.
- 
 ## Credits
  
 ### Content

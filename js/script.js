@@ -3,7 +3,7 @@ const apiKey = "4351796cf6b8414498e5db4f437be245";
 
 //list of models ids
 const modelIDs = [
-  "8be96c1d3d0c491aa3c2c607bb7f6b33", "266316c0b16e4bf8abf7f8274e33deec", "d80bb55a259642d897e31bc038e1c396"
+  "af331d05dc3742a8a8ef6fde107b5d8f", "266316c0b16e4bf8abf7f8274e33deec", "39b8ad3b75e74062bf8c5279394cb0de"
 ];
 
 //get variables from the uploadQNA

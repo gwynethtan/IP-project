@@ -34,12 +34,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
 
-      //check whether data sucessfully in restDB
-      fetch("https://ipproject-d38f.restdb.io/rest/contact", settings)
-        .then(response => response.json())
-        .then(data => {
-          console.log(data);
-          document.getElementById("contactBtn").disabled = false;
-        });
-    }); 
+        // Check whether data successfully in restDB
+        fetch("https://ipproject-d38f.restdb.io/rest/contact", settings)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                document.getElementById("contactBtn").disabled = false;
+                // Inform user it is a 
+                window.location.href = "sent.html";
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+                alert("There was an error processing your request. Please try again later or check if input in the valid data.");
+                document.getElementById("contactBtn").disabled = false;
+            });
+    });
 });
