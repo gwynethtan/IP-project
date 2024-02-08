@@ -2,12 +2,13 @@
  
 This is for our IP project
 
-Website of the project: https://gwynethtan.github.io/RoleModels/
-Website of RoleModels repository to view commits : https://github.com/gwynethtan/RoleModels?tab=readme-ov-file
+- Website of the project: https://gwynethtan.github.io/RoleModels/
+- Website of RoleModels repository to view commits : https://github.com/gwynethtan/RoleModels?tab=readme-ov-file
 
 Contribution to team 
-Praise : She decided the layout of the page and coded the front end development using HTML and CSS
-Gwyneth: She decided on what APIs to use and developed the back end of the website using Javascipt 
+
+- Praise : She decided the layout of the page and coded the front end development using HTML and CSS
+- Gwyneth: She decided on what APIs to use and developed the back end of the website using Javascipt 
 
 In Ngee Ann polytechnic, there are students have been struggling 3D modelling or students who are passionate in it. For students who have been struggling in 3D modelling, it is not easy for them to search for solutions online specific to their project. Although they ask their 3D modelling teacher questions, teachers can get busy and is unable to answer their question promptly. For students who are passionate in it, there aren’t much suitable opportunities for them to expand their knowledge in it or may be unable to form a group with sufficient members to join a competition. That is why a platform that can cater to both students’ needs is required to guide them.
  
