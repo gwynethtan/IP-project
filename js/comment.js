@@ -47,6 +47,8 @@ function updateComments(comments) {
     let commentsHTML = '';
     var rewardProfileImageURL =localStorage.getItem("rewardProfileImage");
     console.log(`${rewardProfileImageURL}`);
+
+    //ensure border color of profile picture shown 
     var borderColor =localStorage.getItem("borderColor");
     console.log(`${borderColor}`);
 
@@ -79,10 +81,8 @@ function updateComments(comments) {
 // Function to retrieve and display comments when the page reloads
 function displayComments() {
     let currentPageUrl = window.location.href;
-
     // Retrieve existing comments for the current page from local storage
     let pageComments = JSON.parse(localStorage.getItem('comments_' + currentPageUrl)) || [];
-
     updateComments(pageComments);
 }
 
