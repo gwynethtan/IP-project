@@ -2,9 +2,6 @@
  
 This is for our IP project
 
-- Website of the project: https://gwynethtan.github.io/RoleModels/
-- Website of RoleModels repository to view commits : https://github.com/gwynethtan/RoleModels?tab=readme-ov-file
-
 Contribution to team 
 
 - Praise : She decided the layout of the page and coded the front end development using HTML and CSS
