@@ -1,11 +1,4 @@
 # Role Models
- 
-This is for our IP project
-
-Contribution to team 
-
-- Praise : She decided the layout of the page and coded the front end development using HTML and CSS
-- Gwyneth: She decided on what APIs to use and developed the back end of the website using Javascipt 
 
 In Ngee Ann polytechnic, there are students have been struggling 3D modelling or students who are passionate in it. For students who have been struggling in 3D modelling, it is not easy for them to search for solutions online specific to their project. Although they ask their 3D modelling teacher questions, teachers can get busy and is unable to answer their question promptly. For students who are passionate in it, there aren’t much suitable opportunities for them to expand their knowledge in it or may be unable to form a group with sufficient members to join a competition. That is why a platform that can cater to both students’ needs is required to guide them.
  
@@ -14,7 +7,7 @@ Role Models is a platform where students can upload their 3d models to ask quest
 With this app features, students are motivated to use this app for their own individual purposes. Students will develop their love and knowledge for 3D modelling.
  
 ## Design Process
-This website is for Immersive Media Ngee Ann polytechnic students. They want to achieve help regarding 3D modelling from other students, challenge their thinking in 3D modelling and want to redeem vouchers with no monetary costs.
+This website is for Immersive Media Ngee Ann polytechnic students, a course where students learn how to do 3D modelling. They want to achieve help regarding 3D modelling from other students, challenge their thinking in 3D modelling and want to redeem vouchers with no monetary costs.
  
 This app is the best way to achieve that as students can post 3d modelling, join competitions and redeem vouchers according to the points they have earned
  
